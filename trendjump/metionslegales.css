@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'NexaBold';
+    src: url(/assets/fonts/FontsFree-Net-nexa-bold.ttf);
+  }
+  
+  @font-face {
+    font-family: 'NexaLight';
+    src: url(assets/fonts/FontsFree-Net-nexa-light.ttf);
+  }
+  
+  html::-webkit-scrollbar {
+    display: none;
+  }
+  
+  html {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  
+    overflow: auto;
+  }
+  
+  body {
+    background: url(/assets/img/fond.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .text {
+    font-family: 'NexaLight';
+    line-height: 24px;
+  
+    color: #13304e;
+  }
+  
+  #retour {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  
+    font-family: 'NexaBold';
+    font-size: 1.5em;
+  
+    transition: transform 0.3s;
+  }
+  
+  #retour:hover {
+    transform: rotate(-10deg) scale(1.1);
+  
+    text-decoration: underline;
+  }
+  
+  #mentions-legales {
+    padding-top: 7%;
+    margin: auto;
+    width: 800px;
+  
+    text-align: justify;
+  }
+  
+  h1 {
+    margin-bottom: 5%;
+  
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  
+  h1,
+  h2 {
+    font-family: 'NexaBold';
+  
+    padding-top: 4%;
+  }
+  
+  h1,
+  h2,
+  p,
+  ul {
+    padding-bottom: 30px;
+  }
+  
+  ul {
+    margin-left: 10%;
+  }
+  
+  @media (max-width: 1000px) {
+    #retour {
+      left: 5%;
+      top: 5%;
+    }
+  
+    #mentions-legales {
+      padding-top: 20%;
+      width: 80%;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+  
