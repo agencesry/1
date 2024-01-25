@@ -710,7 +710,7 @@ section {
 
 }
 
-/*
+
 @media (max-width: 750px) {
   .content {
      flex-direction: column-reverse;
@@ -720,7 +720,6 @@ section {
     margin: 10px auto 40px;
   }
 }
-*/
 
 
 
@@ -967,6 +966,8 @@ section {
 
 /* Seciton 3 */
 
+/* Seciton 3 */
+
 .home {
   display: grid;
   grid-template-columns: 45% 50%;
@@ -985,6 +986,33 @@ section {
   background: linear-gradient(0deg, #000000, #230852);
   overflow: hidden;
   padding: 130px 80px;
+}
+
+.description {
+  color: #fff;
+  padding: 0 50px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .home {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    padding: 80px;
+  }
+
+  .description {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .description > h1 {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  p {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
 }
 
 .description {
