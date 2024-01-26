@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/assets/img/capsule.png" type="image/x-icon">
+    <link rel="icon" href="/assets/img/favico.ico" type="image/x-icon">
     <script src="script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script>
         tailwind.config = {
             darkMode: "class",
@@ -19,21 +21,6 @@
     </script>
 </head>
 <body >
-    <div id="loadingGroup">
-        <div id="logoAboveLoading" class="containeur">
-            <img src="/assets/img/logo.png" alt="" style="max-width: 200px;">   
-        </div>
-            <svg width="150" height="24" viewBox="0 0 248 28">
-            <!-- Rectangle de fond avec overflow hidden -->
-            <rect x="4" y="4" width="240" height="20" fill="transparent" stroke="white" stroke-width="3" rx="10" overflow="hidden"/>
-    
-            <!-- Rectangle de la barre de chargement -->
-            <rect id="loadingBar" width="0" height="5" x="11.5" y="11.5" fill="white" rx="3.5"/>
-        </svg>
-        <img width="150" id="ImgCaCharge" src="/assets/img/chargement.png"/>
-    </div>     
-    
-
     <header id="myHeader">
         <img id="logo" src="/assets/img/logoJ.png" alt="">
       <path fill="#fff" fill-rule="evenodd" d="M502.8 0h211.8l-23 39.7-138.5 240L483 401H342.7L413 279.6 251.4 0h140.3L483 158.1 538.6 62 502.8 0Zm-201 279.6L140.1 0H0l231.7 401 70-121.4Z"/>
@@ -49,6 +36,18 @@
             </button>
         </nav>
     </header>
+    <div id="loadingGroup">
+
+        <div class="wrapper">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+        </div>
+
+    </div>     
     <main id="page">
         <div id="home" class="relative flex flex-col h-[100vh] items-center justify-center bg-white dark:bg-black transition-bg">
             <div class="absolute inset-0 overflow-hidden">
@@ -140,7 +139,13 @@
               </section>    
 
 
+
+              <div id="slider1">
+                <div class="span base1">Nous exellons en</div>
+                <div class="span" id="sliderValue1"></div>
+              </div>
               <section id="section2">
+
                 <div class="card">
                   <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/ef19280b-4fd3-4fdd-9798-1ec22d8ab4b8" alt="image" />
             
@@ -176,7 +181,7 @@
               <section id="section3" class="home">
                     <div class="description">
                       <h1 class="title">
-                        <span class="gradient-text">Grow Professionally</span> with the Best
+                        <span class="gradient-text">Évolue sur les réseaux</span> avec les meilleurs
                       </h1>
                       <p class="paragraph">
                         In a world filled with opportunities, having a mentor can make all the
@@ -189,35 +194,198 @@
                       <span class="item" style="--i: 1"></span>
                       <img
                         class="item"
-                        src="/assets/img/logfromdalo.png"
+                        src="assets/img/logfromdalo1.png"
                         style="--i: 2"
                         alt="" />
                       <span class="item" style="--i: 3"></span>
                       <img
                         class="item"
-                        src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/b8a14493-3d9f-4b9b-b93a-56d0bc7243e9"
+                        src="assets/img/ice.png"
                         style="--i: 4"
                         alt="" />
               
                       <img
                         class="item"
-                        src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/03e51e1e-9750-45a5-b75e-a1e341d4562a"
+                        src="assets/img/kvi.png"
                         style="--i: 10"
                         alt="" />
                       <span class="item" style="--i: 11"></span>
-                      <img class="item" src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/5eb50f89-3e5a-480e-860c-8d40d3ba9ffe" style="--i: 12" alt="" />
+                      <img class="item" src="assets/img/elihca.png" style="--i: 12" alt="" />
                       <span class="item" style="--i: 5"></span>
               
                       <span class="item" style="--i: 9"></span>
-                      <img class="item" src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/86c71a79-2efe-4567-8665-b1e5a1fd9735" style="--i: 8" alt="" />
+                      <img class="item" src="assets/img/2ppl.png" style="--i: 8; " alt="" />
                       <span class="item" style="--i: 7"></span>
-                      <img class="item" src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/97ef9643-5202-41aa-80f0-ceeabccdd099" style="--i: 6" alt="" />
+                      <img class="item" src="assets/img/hich.png" style="--i: 6; width: 100%; height: auto; object-fit: cover;" alt="" />
                     </div>
               </section>
 
 
+
+              <section id="section4">
+                <div id="slider2">
+                  <div class="span base1">Questions</div>
+                  <div class="span" id="sliderValue2"></div>
+                </div>
+                <details>
+                  <summary>Proposez-vous des services de conception de logo et de branding ?</summary>
+                  <p>Notre agence propose en effet des services complets de conception de logo et de branding. Nous travaillons en étroite collaboration avec nos clients pour créer une identité visuelle unique qui reflète leur vision et leurs valeurs.</p>
+              </details>
+          
+              <!-- Question 2 -->
+              <details>
+                  <summary>Quels types de campagnes publicitaires pouvez-vous créer pour mon entreprise ?</summary>
+                  <p>Nous sommes spécialisés dans la création de campagnes publicitaires personnalisées adaptées à chaque entreprise. Que ce soit des campagnes sur les réseaux sociaux, des publicités en ligne ou d'autres formes de promotion, nous concevons des stratégies efficaces pour atteindre votre public cible.</p>
+              </details>
+          
+              <!-- Question 3 -->
+              <details>
+                  <summary>Offrez-vous des services de gestion des médias sociaux ?</summary>
+                  <p>Oui, nous offrons des services complets de gestion des médias sociaux. Notre équipe expérimentée peut élaborer des stratégies, créer du contenu engageant et gérer vos comptes sur différentes plateformes sociales pour renforcer votre présence en ligne.</p>
+              </details>
+          
+              <!-- Question 4 -->
+              <details>
+                  <summary>Comment votre agence peut-elle aider les artistes à promouvoir leur travail ?</summary>
+                  <p>Nous comprenons l'importance de la promotion pour les artistes. Notre agence peut concevoir des stratégies de marketing créatives, créer du contenu visuel accrocheur et utiliser divers canaux pour accroître la visibilité de votre travail artistique.</p>
+              </details>
+          
+              <!-- Question 5 -->
+              <details>
+                  <summary>Fournissez-vous des services de relations publiques pour les entreprises ?</summary>
+                  <p>Absolument, nous offrons des services complets de relations publiques pour les entreprises. Que ce soit pour gérer la réputation, organiser des événements médiatiques ou gérer les communications en période de crise, nous sommes là pour vous aider.</p>
+              </details>
+              <details>
+                <summary>Proposez-vous des forfaits personnalisés en fonction des besoins spécifiques de chaque client ?</summary>
+                <p>Oui, nous proposons des forfaits personnalisés adaptés aux besoins spécifiques de chaque client. Notre équipe travaille en étroite collaboration avec vous pour comprendre vos objectifs et créer une solution sur mesure qui répond à vos exigences.</p>
+            </details>
+        
+            <!-- Question 2 -->
+            <details>
+                <summary>Offrez-vous des remises pour les clients réguliers ou les projets à long terme ?</summary>
+                <p>En effet, nous offrons des remises avantageuses pour nos clients réguliers ainsi que pour les projets à long terme. Nous apprécions la fidélité de nos clients et souhaitons récompenser leur engagement continu avec notre agence.</p>
+            </details>
+        
+            <!-- Question 3 -->
+            <details>
+                <summary>Quelles sont les politiques de remboursement ou de révision en place en cas de non-satisfaction ?</summary>
+                <p>Nous avons des politiques de remboursement et de révision flexibles en place pour assurer votre satisfaction. En cas de non-satisfaction, veuillez nous contacter immédiatement, et nous travaillerons ensemble pour résoudre vos préoccupations et garantir votre entière satisfaction.</p>
+            </details>
+
+              </section>
+
+<!-- 
+            <section id="section5">
+                <form id="form" class="topBefore">
+                    <input id="name" type="text" placeholder="NAME">
+                    <input id="email" type="text" placeholder="E-MAIL">
+                    <textarea id="message" placeholder="MESSAGE" maxlength="500"></textarea>
+                    <input id="submit" type="submit" value="GO!">
+                </form>
+                
+            </section> -->
+
+
             <a id="fixedlink" target="_blank" rel="nofollow noopener" href="https://www.instagram.com/trendjump">» Tout droits réservé TrendJump &copy; </a>
     </main>
+
+    <footer class="footer-section">
+      <div class="container">
+              <div class="info1">
+                      <div class="location icone">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <div class="footer-text">
+                              <h4>Find us</h4>
+                              <span>1010 Avenue, sw 54321, chandigarh</span>
+                          </div>
+                      </div>
+                      <div class="tel icone">
+                          <i class="fas fa-phone"></i>
+                          <div class="footer-text">
+                              <h4>Call us</h4>
+                              <span>9876543210 0</span>
+                          </div>
+                      </div>
+                      <div class="email icone">
+                          <i class="far fa-envelope-open"></i>
+                          <div class="footer-text">
+                              <h4>Mail us</h4>
+                              <span>mail@info.com</span>
+                          </div>
+                      </div>
+              </div>
+          <div class="info2">
+                      <div class="gauche">
+                          <div class="titre-gauche">
+                              <a href="index.html"><img src="assets/img/logo-transparent.png" class="img-fluid" alt="logo trendjump"></a>
+                          </div>
+                          <div class="footer-text">
+                              <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                              elit,Lorem ipsum dolor sit amet.</p>
+                          </div>
+                          <div class="footer-social-icon">
+                              <span>Follow us</span>
+                              <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                              <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                              <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                          </div>
+                      </div>
+                    <div class="millieu">
+                        <div class="titre-millieu titres">
+                            <h5><strong>Useful Links</strong></h5>
+                            <hr>
+                        </div>
+                        <div class="colonnes">
+                          <ul class="colonne1">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">about</a></li>
+                              <li><a href="#">services</a></li>
+                              <li><a href="#">portfolio</a></li>
+                              <li><a href="#">Contact</a></li>
+                            </ul>
+                            <ul class="colonne2">
+                              <li><a href="#">About us</a></li>
+                              <li><a href="#">Our Services</a></li>
+                              <li><a href="#">Expert Team</a></li>
+                              <li><a href="#">Contact us</a></li>
+                              <li><a href="#">Latest News</a></li>
+                          </ul>
+                        </div>
+                        </div>
+                  <div class="droite">
+                          <div class="titre-droite titres">
+                              <h5><strong>Subscribe</strong></h5>
+                              <hr>
+                          </div>
+                          <div class="footer-text mb-25">
+                              <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                          </div>
+                          <div class="subscribe-form">
+                              <form action="#">
+                                  <input type="text" placeholder="Email Address">
+                                  <button><i class="fab fa-telegram-plane"></i></button>
+                              </form>
+                          </div>
+                  </div>
+          </div>
+      </div>
+      <div class="copyright-area">
+          <div class="container">
+              <div class="row">
+                      <div class="copyright-text">
+                          <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                          <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Terms</a></li>
+                              <li><a href="#">Privacy</a></li>
+                              <li><a href="#">Policy</a></li>
+                              <li><a href="#">Contact</a></li>
+                          </ul>
+                    </div>
+              </div>
+          </div>
+      </div>
+  </footer>
 
 
     
@@ -254,11 +422,11 @@
             hideLoading();
         }, 3000); // 3000 millisecondes (3 secondes) pour la démonstration
     
-        // Mettez à jour la barre de chargement (appelé pendant le chargement simulé)
-        function updateLoadingBar() {
-            const loadingBar = document.getElementById('loadingBar');
-            loadingBar.setAttribute('width', '98%'); // Remplacez '100%' par la largeur que vous souhaitez
-        }
+        // // Mettez à jour la barre de chargement (appelé pendant le chargement simulé)
+        // function updateLoadingBar() {
+        //     const loadingBar = document.getElementById('loadingBar');
+        //     loadingBar.setAttribute('width', '98%'); // Remplacez '100%' par la largeur que vous souhaitez
+        // }
     
             
         function toggleTheme() {
@@ -270,13 +438,13 @@
 
 
 
-    function updateLoadingBar() {
-        const loadingBar = document.getElementById('loadingBar');
-        loadingBar.style.animation = 'fillLoadingBar 3s forwards'; // Remplacez '3s' par la durée de l'animation
-    }
+    // function updateLoadingBar() {
+    //     const loadingBar = document.getElementById('loadingBar');
+    //     loadingBar.style.animation = 'fillLoadingBar 3s forwards'; // Remplacez '3s' par la durée de l'animation
+    // }
 
-    // Appeler la fonction pour mettre à jour la barre de chargement
-    updateLoadingBar();
+    // // Appeler la fonction pour mettre à jour la barre de chargement
+    // updateLoadingBar();
 
 
     document.addEventListener('DOMContentLoaded', function() {
@@ -361,11 +529,107 @@ listItems.forEach((listItem) => {
 
 
 
+var sliderContent1 = [
+            "Web Development",
+            "Comunity Management",
+            "Promotions",
+            "Réseaux Sociaux"
+        ];
+
+        var slider1 = document.querySelector("#slider1");
+        var sliderValue1 = document.querySelector("#sliderValue1");
+        var sliderCounter1 = 0;
+
+        function slide1() {
+            if (sliderCounter1 >= sliderContent1.length) {
+                sliderCounter1 = 0;
+            }
+
+            sliderValue1.innerHTML = "";
+            
+            sliderValue1.classList.remove("holder-animation");
+            void sliderValue1.offsetWidth;
+            sliderValue1.classList.add("holder-animation");
+            
+            for (i = 0; i < sliderContent1[sliderCounter1].length; i++) {
+                let letterDiv = document.createElement("div");
+                letterDiv.innerHTML = sliderContent1[sliderCounter1][i];
+
+                if (letterDiv.innerHTML == " ") {
+                    letterDiv.innerHTML = "&nbsp;";
+                }
+                letterDiv.classList.add("start");
+                letterDiv.classList.add("animation");
+                letterDiv.style.animationDelay = i / 10 + "s";
+                sliderValue1.appendChild(letterDiv);
+            }
+
+            sliderCounter1++;
+        }
+
+        slide1();
+        setInterval(slide1, 4000);
+
+
+        // Deuxième liste sliderContent
+        var sliderContent2 = [
+            "fréquements posées",
+            "qui peuvent vous intéresser",
+            "des informations essentielles"
+        ];
+
+        var slider2 = document.querySelector("#slider2");
+        var sliderValue2 = document.querySelector("#sliderValue2");
+        var sliderCounter2 = 0;
+
+        function slide2() {
+            if (sliderCounter2 >= sliderContent2.length) {
+                sliderCounter2 = 0;
+            }
+
+            sliderValue2.innerHTML = "";
+            
+            sliderValue2.classList.remove("holder-animation");
+            void sliderValue2.offsetWidth;
+            sliderValue2.classList.add("holder-animation");
+            
+            for (i = 0; i < sliderContent2[sliderCounter2].length; i++) {
+                let letterDiv = document.createElement("div");
+                letterDiv.innerHTML = sliderContent2[sliderCounter2][i];
+
+                if (letterDiv.innerHTML == " ") {
+                    letterDiv.innerHTML = "&nbsp;";
+                }
+                letterDiv.classList.add("start");
+                letterDiv.classList.add("animation");
+                letterDiv.style.animationDelay = i / 10 + "s";
+                sliderValue2.appendChild(letterDiv);
+            }
+
+            sliderCounter2++;
+        }
+
+        slide2();
+        setInterval(slide2, 4000);
 
 
 
 
 
+// Désactive la redimension du textarea
+document.getElementById('message').addEventListener('mousedown', function (e) {
+    if (e.target.tagName.toLowerCase() === 'textarea') {
+        e.preventDefault();
+        this.focus();
+    }
+});
+
+// Limite le nombre de caractères à 500
+document.getElementById('message').addEventListener('input', function () {
+    if (this.value.length > 500) {
+        this.value = this.value.substring(0, 500);
+    }
+});
 
 </script>
 </body>
