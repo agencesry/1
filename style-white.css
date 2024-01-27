@@ -41,7 +41,6 @@ min-height: 100vh;
 padding: 50px;
 justify-content: center;
 align-items: center;
-background: #222;
 color: #fff;
 position: relative;
 
@@ -344,40 +343,6 @@ padding: 20px;
 }
 
 
-  /* Ajoutez ces styles pour les appareils jusqu'à 767 pixels de largeur */
-@media only screen and (max-width: 767px) {
-  nav {
-    height: auto;
-    top: 60px; /* Ajustez la valeur en fonction de votre mise en page */
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-    border-radius: 0;
-    border: none;
-    width: 400px;
-    left: 0;
-    right: 0;
-  }
-
-  a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 15px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  button {
-    display: block;
-    margin: 10px auto;
-    transform: scale(1);
-  }
-
-  button span {
-    transform: scalex(1);
-  }
-}
-
-
 
 
 
@@ -674,18 +639,6 @@ section {
 }
 
 
-@media (max-width: 750px) {
-  .content {
-     flex-direction: column-reverse;
-  }
-  
-  .btn {
-    margin: 10px auto 40px;
-  }
-}
-
-
-
 
 
 
@@ -925,7 +878,7 @@ section {
   display: flex;
   gap: 15px;
   font-size: 30px;
-  background-color: white;
+  background-color: #ffffff;
   justify-content: center;
 }
 
@@ -980,6 +933,7 @@ section {
 #section2 {
   gap: 30px;
   padding: 80px 40px 40px 80px;
+  background: linear-gradient(180deg, #fff, #aea4e3);
 }
 
 
@@ -1030,18 +984,6 @@ section {
   color: #6b7280;
 }
 
-@media (max-width: 900px) {
-  #section2 {
-     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 500px) {
-  #section2 {
-     grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 
 
 
@@ -1067,27 +1009,6 @@ section {
   padding: 0 50px;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  .home {
-    grid-template-columns: 1fr; /* Single column for smaller screens */
-    padding: 80px;
-  }
-
-  .description {
-    padding: 0;
-    text-align: center;
-  }
-  
-  .description > h1 {
-    margin-right: 20%;
-    margin-left: 20%;
-  }
-  p {
-    margin-right: 20%;
-    margin-left: 20%;
-  }
-}
 
 .description {
   color: #fff;
