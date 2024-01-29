@@ -238,37 +238,37 @@ section {
 }
 
 .swiper-slide:nth-child(1n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("./assets/img/white/2ppl_W.PNG")
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/assets/img/white/2ppl_W.PNG")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide:nth-child(4n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("./assets/img/white/elihca_W.PNG")
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/assets/img/white/elihca_W.PNG")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide:nth-child(5n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("./assets/img/white/hich_W.PNG")
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/assets/img/white/hich_W.PNG")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide:nth-child(6n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("./assets/img/white/ice_W.PNG")
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/assets/img/white/ice_W.PNG")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide:nth-child(7n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("./assets/img/white/kvi_W.PNG")
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/assets/img/white/kvi_W.PNG")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide:nth-child(8n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("./assets/img/white/log_W.PNG")
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/assets/img/white/log_W.PNG")
       no-repeat 50% 0% / cover;
 }
 
 .swiper-slide:nth-child(9n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("./assets/img/white/sanji_W.PNG")
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/assets/img/white/sanji_W.PNG")
       no-repeat 50% 50% / cover;
 }
 
@@ -1325,3 +1325,185 @@ footer {
 
 
 
+/********************* DARK MODE ***********************/
+
+
+body.dark {
+  line-height: 1.6;
+color: #fff;
+background: #000;
+font-size: 18px;
+font-weight: 400;
+font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Helvetica Neue", sans-serif !important;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+&.stop {
+overflow: hidden;
+}
+}
+
+
+.dark .jumbo {
+  background-image: var(--stripesDark), var(--rainbow);
+  filter: blur(10px) opacity(50%) saturate(200%);
+}
+.dark .jumbo::after {
+  background-image: var(--stripesDark), var(--rainbow);
+}
+
+
+.dark .jumbo {
+/* Styles pour le mode sombre du jumbo */
+background-image: var(--stripesDark), var(--rainbow);
+filter: blur(10px) opacity(50%) saturate(200%);
+}
+
+.dark #section2 {
+/* Styles spécifiques pour le mode sombre dans la section exemples */
+background: linear-gradient(0deg, #000000, #aea4e3);
+color: #fff ;
+
+}
+
+.dark #section {
+  background: linear-gradient(180deg, #000000, #aea4e3);
+}
+
+.dark #section2 p {
+color: #fff ;
+}
+
+
+
+
+
+
+/* Pour le thème sombre */
+.dark .swiper-slide:nth-child(1n) {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/assets/img/black/2ppl_B.PNG") 
+  no-repeat 50% 50% / cover;
+}
+
+
+.dark .swiper-slide:nth-child(4n) {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/assets/img/black/elihca_B.PNG")
+      no-repeat 50% 50% / cover;
+}
+
+.dark .swiper-slide:nth-child(5n) {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/assets/img/black/hich_B.PNG")
+      no-repeat 50% 50% / cover;
+}
+
+.dark .swiper-slide:nth-child(6n) {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/assets/img/black/ice_B.PNG")
+      no-repeat 50% 50% / cover;
+}
+
+.dark .swiper-slide:nth-child(7n) {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/assets/img/black/kvi_B.PNG")
+      no-repeat 50% 50% / cover;
+}
+
+.dark .swiper-slide:nth-child(8n) {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/assets/img/black/log_B.PNG")
+      no-repeat 50% 0% / cover;
+}
+
+.dark .swiper-slide:nth-child(9n) {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/assets/img/black/sanji_B.PNG")
+      no-repeat 50% 50% / cover;
+}
+
+
+
+
+
+
+
+/* Section 2 */
+
+.dark #slider1 {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  font-size: 30px;
+  justify-content: center;
+  background-color: #aea4e3;
+}
+
+.dark #sliderValue1 {
+  display: flex;
+  color: #ff3cac;
+  font-weight: 700;
+
+}
+
+
+.dark #slider1 .base1 {
+  color: #ffffff;
+}
+
+.dark .card {
+  width: min(100%, 500px);
+  background: rgba(84, 84, 84, 0.287);
+  border-radius: 16px;
+  font-family: "Poppins", sans-serif;
+  z-index: 5;
+}
+
+
+
+
+.dark .home {
+  display: grid;
+  grid-template-columns: 45% 50%;
+  place-items: center;
+  gap: 50px;
+  background: #000 !important;
+  overflow: hidden;
+  padding: 130px 80px;
+}
+
+
+
+
+
+
+
+/* SECTION 4 */
+
+
+
+
+.dark #slider2 {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  font-size: 30px;
+  justify-content: center;
+  background-color: #000;
+}
+
+.dark #sliderValue2 {
+  display: flex;
+  color: #ff3cac;
+  font-weight: 700;
+
+}
+
+
+
+.dark #slider2 .base1 {
+  color: #ffffff;
+}
+.dark #section4 {
+  background-color: #000 !important;
+}
+
+.dark details {
+  background-color: #000000;
+  color: white;
+
+}
