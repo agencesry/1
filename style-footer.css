@@ -1,0 +1,494 @@
+
+
+/* FOOTER */
+
+
+footer {
+    background-color: #AEA6E3;
+    width: 100%;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .info1 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #373636;
+    padding-top: 20px;
+  }
+  .icone {
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: #9624b2;
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+    
+    
+  }
+  
+  .info1 .fas, .far {
+    margin-right: 20px;
+  }
+  
+  .footer-text h4 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: -20px;
+  }
+  
+  .footer-text span {
+    color: #ffffff;
+    font-size: 15px;
+  }
+  .info2 {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .info2 p {
+    color: #ffffff;
+  }
+  
+  .info2 .titre-gauche img{
+    max-width: 100px;
+  }
+  
+  .info2 .gauche, .millieu, .droite {
+    width: 33%;
+  }
+  .millieu {
+    padding-left: 40px;
+  
+  }
+  .colonnes {
+    display: flex;
+    float: left;
+    width: 100%;
+    color: #ffffff;
+    font-size: 17px;
+  }
+  
+  .colonnes li {
+    margin: 10px;
+  }
+  
+  .colonne2 {
+    margin-left: 10%;
+  }
+  
+  .titres {
+    color: #000;
+  }
+  
+  .titres strong {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  .titres hr {
+    background-color: #9624b2; 
+    height: 2px; 
+    width: 50px; 
+    margin: 10px 0; 
+    border: none; 
+  }
+  
+  .copyright-area {
+    display: flex;
+  }
+  
+  .footer-social-icon span {
+    color: #000000;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+  }
+  .footer-social-icon a {
+    color: #000000;
+    font-size: 16px;
+    margin-right: 15px;
+  }
+  .footer-social-icon i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+  }
+  .facebook-bg{
+    background: #3B5998;
+  }
+  .twitter-bg{
+    background: #55ACEE;
+  }
+  .google-bg{
+    background: #DD4B39;
+  }
+  
+  .subscribe-form {
+    position: relative;
+    overflow: hidden;
+  }
+  .subscribe-form input {
+    width: 100%;
+    padding: 14px 28px;
+    background: #ffffff;
+    border: 1px solid #2E2E2E;
+    color: #000000;
+  }
+  .subscribe-form button {
+      position: absolute;
+      right: 0;
+      background: #9624b2;
+      padding: 13px 20px;
+      border: 1px solid #9624b2;
+      height: 100%;
+      top: 0;
+  }
+  .subscribe-form button i {
+    color: #000000;
+    font-size: 22px;
+    transform: rotate(-6deg);
+  }
+  
+  /* Ajout d'une transition pour le bouton */
+  .subscribe-form button {
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Ajout de styles pour l'effet de fondu */
+  .subscribe-form button:hover {
+    background: #fff;
+    color: #9624b2;
+  }
+  
+  /* Ajout d'une animation pour le bouton */
+  .subscribe-form button:hover i {
+    animation: rotatePlane 0.6s ease-in-out infinite;
+  }
+  
+  /* Définition de l'animation */
+  @keyframes rotatePlane {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  
+  
+  
+  
+  .copyright-area{
+    background: #7668a0;
+    padding: 25px 0;
+    margin-top: 40px;
+  }
+  
+  
+  .copyright-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .copyright-text p a {
+    color: #9624b2;
+  }
+  
+  .copyright-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .copyright-text ul li {
+    margin-left: 20px;
+  }
+  
+  .copyright-text ul li a {
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .copyright-text ul li:hover a {
+    color: #9624b2;
+  }
+  
+  
+  
+
+  
+
+
+
+
+  
+
+.dark footer {
+    background: #151414;
+    width: 100%;
+  }
+  
+  .dark .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .dark .info1 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #373636;
+    padding-top: 20px;
+  }
+  .dark .info p {
+    color: #fff;
+  }
+  .dark .icone {
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: #9624b2;
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+  }
+  
+  .dark .info1 .fas,
+  .dark .info1 .far {
+    margin-right: 20px;
+  }
+  
+  .dark .footer-text h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: -20px;
+  }
+  
+  .dark .footer-text span {
+    color: #757575;
+    font-size: 15px;
+  }
+  
+  .dark .info2 {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .dark .info2 p {
+    color: #757575;
+  }
+  
+  .dark .info2 .titre-gauche img {
+    max-width: 100px;
+  }
+  
+  .dark .info2 .gauche,
+  .dark .info2 .millieu,
+  .dark .info2 .droite {
+    width: 33%;
+  }
+  
+  .dark .millieu {
+    padding-left: 40px;
+  }
+  
+  .dark .colonnes {
+    display: flex;
+    float: left;
+    width: 100%;
+    color: #757575;
+    font-size: 17px;
+  }
+  
+  .dark .colonnes li {
+    margin: 10px;
+  }
+  
+  .dark .colonne2 {
+    margin-left: 10%;
+  }
+  
+  .dark .titres {
+    color: #ffffff;
+  }
+  
+  .dark .titres strong {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  .dark .titres hr {
+    background-color: #9624b2;
+    height: 2px;
+    width: 50px;
+    margin: 10px 0;
+    border: none;
+  }
+  
+  .dark .copyright-area {
+    display: flex;
+  }
+  
+  .dark .footer-social-icon span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .dark .footer-social-icon a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 15px;
+  }
+  
+  .dark .footer-social-icon i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+  }
+  
+  .dark .facebook-bg {
+    background: #3B5998;
+  }
+  
+  .dark .twitter-bg {
+    background: #55ACEE;
+  }
+  
+  .dark .google-bg {
+    background: #DD4B39;
+  }
+  
+  .dark .subscribe-form {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .dark .subscribe-form input {
+    width: 100%;
+    padding: 14px 28px;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E;
+    color: #fff;
+  }
+  
+  .dark .subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #9624b2;
+    padding: 13px 20px;
+    border: 1px solid #9624b2;
+    height: 100%;
+    top: 0;
+  }
+  
+  .dark .subscribe-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+  }
+  
+  /* Ajout d'une transition pour le bouton */
+  .dark .subscribe-form button {
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Ajout de styles pour l'effet de fondu */
+  .dark .subscribe-form button:hover {
+    background: #fff;
+    color: #9624b2;
+  }
+  
+  /* Ajout d'une animation pour le bouton */
+  .dark .subscribe-form button:hover i {
+    animation: rotatePlane 0.6s ease-in-out infinite;
+  }
+  
+  /* Définition de l'animation */
+  @keyframes rotatePlane {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .dark .copyright-area {
+    background: #202020;
+    padding: 25px 0;
+    margin-top: 40px;
+  }
+  
+  .dark .copyright-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dark .copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #878787;
+  }
+  
+  .dark .copyright-text p a {
+    color: #9624b2;
+  }
+  
+  .dark .copyright-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .dark .copyright-text ul li {
+    margin-left: 20px;
+  }
+  
+  .dark .copyright-text ul li a {
+    font-size: 14px;
+    color: #878787;
+    text-decoration: none;
+  }
+  
+  .dark .copyright-text ul li:hover a {
+    color: #9624b2;
+  }
+  
+  
