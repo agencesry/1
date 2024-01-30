@@ -10,7 +10,8 @@
 
 /* Onglets */
 #section1 {
-  background: linear-gradient(to bottom, #ffffff 10%, #6ab5c8 50%, #ffffff 100%);
+  /* background: linear-gradient(to bottom, #ffffff 10%, #6ab5c8 50%, #ffffff 100%); */
+  background: #fff;
   color: #efedef;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -23,6 +24,30 @@
 h1 {
   font-size: 40px;
   line-height: 0.8em;
+  color: #000;
+}
+.tab2-1-1, .tab2-2-2 {
+  display: flex;
+}
+
+.a-cote {
+  display: flex;
+  flex-direction: column;
+}
+
+.a-cote img {
+  max-height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 20px; /* Ajoute une marge à droite de l'image pour créer de l'espace entre l'image et le texte */
+}
+
+.a-cote p {
+  flex-grow: 1;
+}
+
+.tab2-1-1 h4, .tab2-2-2 h4 {
+  color: #7008cb;
 }
 
 
@@ -377,7 +402,8 @@ h1 {
 
 /* Onglets */
 .dark #section1 {
-  background: linear-gradient(to bottom, #000000 10%, #507872 50%, #000000 100%);
+  /* background: linear-gradient(to bottom, #000000 10%, #507872 50%, #000000 100%); */
+  background: #000;
   color: #ffffff;
 }
 
