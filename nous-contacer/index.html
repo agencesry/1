@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
-    <link rel="stylesheet" href="../style-footer.css"> 
-    <link rel="stylesheet" href="../style-nav.css"> 
-    <link rel="stylesheet" href="../style-responsive.css">
+    <link rel="stylesheet" href="/style-footer.css"> 
+    <link rel="stylesheet" href="/style-nav.css"> 
+    <link rel="stylesheet" href="/style-responsive.css">
     <link rel="stylesheet" href="style-contact.css">
-    <link rel="icon" href="../assets/img/favico.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/img/favico.ico" type="image/x-icon">
     <script src="script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,12 +25,13 @@
 </head>
 <body >
     <header id="myHeader">
-        <img id="logo" src="../assets/img/logo-transparent.png" alt="">
+        <img id="logo" src="/assets/img/logo-transparent.png" alt="">
       <path fill="#fff" fill-rule="evenodd" d="M502.8 0h211.8l-23 39.7-138.5 240L483 401H342.7L413 279.6 251.4 0h140.3L483 158.1 538.6 62 502.8 0Zm-201 279.6L140.1 0H0l231.7 401 70-121.4Z"/>
+    </svg>
         <nav id="navbar" class="hidden">
-            <a href="../">Acceuil</a>
-            <a href="../vous-accompagner/">Accompagement</a>
-            <a href="../nous-contacer/">Contact</a>
+            <a href="/">Acceuil</a>
+            <a href="/vous-accompagner/">Accompagement</a>
+            <a href="/nous-contacer/">Contact</a>
             <button id="openmenu">
                 <span></span>
                 <span></span>
@@ -44,13 +45,15 @@ of Simple CSS Waves-->
     <!--Content before waves-->
     <div class="inner-header flex">
     <!--Just the logo.. Don't mind this-->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="30" height="30" style="margin-right: 20px;">
-        <!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
-             License - https://fontawesome.com/license/free
-             Copyright 2024 Fonticons, Inc. -->
-        <path d="M0 96l576 0c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96zm0 32V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128H0zM64 405.3c0-29.5 23.9-53.3 53.3-53.3H234.7c29.5 0 53.3 23.9 53.3 53.3c0 5.9-4.8 10.7-10.7 10.7H74.7c-5.9 0-10.7-4.8-10.7-10.7zM176 192a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm176 16c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16z"/>
-      </svg>
-      
+    <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
+    <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
+    <g><path fill="#fff"
+    d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
+    C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
+    c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
+    </g>
+    </svg>
     <h1>Nous contacter</h1>
     </div>
     
@@ -113,7 +116,7 @@ of Simple CSS Waves-->
                         <h3>France, 41000</h3>
                       </div>
                       <div class="phone">
-                        <i class="fas fa-phone-alt"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 25px; height: auto;"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f8b7d7" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
                         <h3>+33 7 66 39 78 49</h3>
                       </div>
                       <div class="email">
@@ -122,14 +125,15 @@ of Simple CSS Waves-->
                       </div>
                   </div>
                   <div class="contact-form">
-                    <form>
-                      <input type="text" placeholder="Nom">
-                      <input type="email" placeholder="Email">
-                      <textarea rows="4" placeholder="Parlez-nous de votre projet..."></textarea>
-                      <button type="button">ENVOYER</button>
-                    </form>
+                    <form id="contactForm" action="traitement_formulaire.php" method="post">
+                        <input type="text" id="nom" placeholder="Nom">
+                        <input type="email" id="email" placeholder="Email">
+                        <textarea rows="4" id="projet" placeholder="Parlez-nous de votre projet..."></textarea>
+                        <button type="submit">ENVOYER</button>
+                    </form>                      
                   </div>                  
               </div>
+              
               
         </section>
                 <div id="droite-bas" >
@@ -144,7 +148,7 @@ of Simple CSS Waves-->
             <div class="info2">
                         <div class="gauche">
                             <div class="titre-gauche">
-                                <a href="/"><img src="../assets/img/logo-transparent.png" class="img-fluid" alt="logo trendjump"></a>
+                                <a href="/"><img src="/assets/img/logo-transparent.png" class="img-fluid" alt="logo trendjump"></a>
                             </div>
                             <div class="footer-text">
                                 <p>À TrendJump, nous sommes passionnés par l'innovation et l'excellence. Notre mission est de créer des expériences exceptionnelles qui laissent une empreinte durable. Nous croyons en la puissance de la créativité pour inspirer, engager et transformer. Chez TrendJump, chaque projet est une opportunité de repousser les limites et de créer quelque chose de vraiment unique.</p>

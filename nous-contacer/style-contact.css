@@ -1,3 +1,9 @@
+html {
+  font-family: 'Lato', sans-serif !important;
+}
+body.dark {
+  background-color: #000;
+}
 #page {
     display: flex;
       justify-content: center;
@@ -6,13 +12,11 @@
     padding-top: 50px;}
   
   h1 {
-      font-family: 'Lato', sans-serif;
       font-weight:300;
       letter-spacing: 2px;
       font-size:48px;
     }
     p {
-      font-family: 'Lato', sans-serif;
       letter-spacing: 1px;
       font-size:14px;
       color: #333333;
@@ -115,12 +119,11 @@
   
   
   
-  
-  
-  
     .contact-form-container {
       background: #F4F3F3;
-      font-family: 'Lato', sans-serif;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 800px;
     }
     
     .contact-us {
@@ -128,6 +131,7 @@
       width: 250px;
       background: #C3E0EC;
       overflow: hidden;
+      margin-bottom: 20px;
     }
     
     .contact-us:before {
@@ -191,6 +195,7 @@
       text-align: center;
       padding: 20px 0;
       color: #444;
+      width: 100%;
     }
     
     .header h1 {
@@ -202,12 +207,26 @@
       font-weight: 300;
     }
     
+    .info-contact {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    
     .address,
     .email,
     .phone {
+      flex-basis: calc(33.33% - 20px);
       text-align: center;
       padding: 20px 0;
       color: #444;
+    }
+
+    .phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
     }
     
     .address h3,
@@ -225,9 +244,13 @@
       margin-bottom: 20px;
     }
     
+    .contact-form {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
     .contact-form form {
       position: relative;
-      width: 440px;
       margin: 0 auto;
       padding: 20px;
       box-shadow: 0 0 5px rgba(0, 0, 0, .1);
@@ -239,7 +262,7 @@
       background: white;
       display: block;
       margin: 20px auto;
-      width: 100%;
+      width: calc(100% - 40px);
       border: 0;
     }
     
@@ -257,7 +280,6 @@
       resize: none;
       outline: none;
       font-size: 1rem;
-      font-family: lato;
       color: rgba(68, 68, 68, .8);
     }
     
@@ -265,8 +287,8 @@
       position: absolute;
       display: block;
       height: 40px;
-      width: 250px;
-      left: 95px;
+      width: calc(100% - 40px);
+      left: 20px;
       border: 0;
       border-radius: 20px;
       bottom: -20px;
@@ -277,44 +299,6 @@
       outline: none;
     }
     
-    .contact-form {
-      padding-bottom: 40px;
-    }
-    
-    /* Layout Stuff */
-    .contact-form-container {
-      width: 800px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 0.5fr 0.5fr 2fr;
-      grid-template-areas: "contact-us header header header" "contact-us address phone email" "contact-us contact-form contact-form contact-form";
-    }
-    
-    .contact-us {
-      grid-area: contact-us;
-    }
-    
-    .header {
-      grid-area: header;
-    }
-    
-    .address {
-      grid-area: address;
-    }
-    
-    .phone {
-      grid-area: phone;
-    }
-    
-    .email {
-      grid-area: email;
-    }
-    
-    .contact-form {
-      grid-area: contact-form;
-    }
-    
-
 
 
 
@@ -360,7 +344,6 @@
     
       .dark .contact-form-container {
         background: #222; /* Couleur de fond sombre */
-        font-family: 'Lato', sans-serif;
       }
       
       .dark .contact-us {

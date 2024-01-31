@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
-    <link rel="stylesheet" href="../style-footer.css"> 
-    <link rel="stylesheet" href="../style-nav.css"> 
-    <link rel="stylesheet" href="../style-responsive.css">
+    <link rel="stylesheet" href="/style-footer.css"> 
+    <link rel="stylesheet" href="/style-nav.css"> 
+    <link rel="stylesheet" href="/style-responsive.css">
     <link rel="stylesheet" href="style-accompagner.css">
-    <link rel="icon" href="../assets/img/favico.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/img/favico.ico" type="image/x-icon">
     <script src="script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,13 +25,13 @@
 </head>
 <body >
     <header id="myHeader">
-        <img id="logo" src="../assets/img/logo-transparent.png" alt="">
+        <img id="logo" src="/assets/img/logo-transparent.png" alt="">
       <path fill="#fff" fill-rule="evenodd" d="M502.8 0h211.8l-23 39.7-138.5 240L483 401H342.7L413 279.6 251.4 0h140.3L483 158.1 538.6 62 502.8 0Zm-201 279.6L140.1 0H0l231.7 401 70-121.4Z"/>
     </svg>
         <nav id="navbar" class="hidden">
-            <a href="../">Acceuil</a>
-            <a href="../vous-accompagner/">Accompagement</a>
-            <a href="../nous-contacer/">Contact</a>
+            <a href="/">Acceuil</a>
+            <a href="/vous-accompagner/">Accompagement</a>
+            <a href="/nous-contacer/">Contact</a>
             <button id="openmenu">
                 <span></span>
                 <span></span>
@@ -45,14 +45,15 @@ of Simple CSS Waves-->
     <!--Content before waves-->
     <div class="inner-header flex">
     <!--Just the logo.. Don't mind this-->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="30" height="30" style="margin-right: 20px;">
-        <!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
-             License - https://fontawesome.com/license/free
-             Copyright 2024 Fonticons, Inc. -->
-      
-        <path d="M544 248v3.3l69.7-69.7c21.9-21.9 21.9-57.3 0-79.2L535.6 24.4c-21.9-21.9-57.3-21.9-79.2 0L416.3 64.5c-2.7-.3-5.5-.5-8.3-.5H296c-37.1 0-67.6 28-71.6 64H224V248c0 22.1 17.9 40 40 40s40-17.9 40-40V176c0 0 0-.1 0-.1V160l16 0 136 0c0 0 0 0 .1 0H464c44.2 0 80 35.8 80 80v8zM336 192v56c0 39.8-32.2 72-72 72s-72-32.2-72-72V129.4c-35.9 6.2-65.8 32.3-76 68.2L99.5 255.2 26.3 328.4c-21.9 21.9-21.9 57.3 0 79.2l78.1 78.1c21.9 21.9 57.3 21.9 79.2 0l37.7-37.7c.9 0 1.8 .1 2.7 .1H384c26.5 0 48-21.5 48-48c0-5.6-1-11-2.7-16H432c26.5 0 48-21.5 48-48c0-12.8-5-24.4-13.2-33c25.7-5 45.1-27.6 45.2-54.8v-.4c-.1-30.8-25.1-55.8-56-55.8c0 0 0 0 0 0l-120 0z"/>
-      </svg>
-      
+    <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
+    <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
+    <g><path fill="#fff"
+    d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
+    C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
+    c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
+    </g>
+    </svg>
     <h1>Accompagnement</h1>
     </div>
     
@@ -90,31 +91,30 @@ of Simple CSS Waves-->
     <main id="page">
 
         <section id="section1">
-            <div class="tabs">
-            <div class="tab-2">
-                <label for="tab2-1">One</label>
-                <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
-                <div class="tab2-1-1">
-                    <h4>Tab One</h4>
-                    <div class="a-cote">
-                        <img src="../assets/img/banner-1.png" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat id velit quis vestibulum. Nam id orci eu urna mollis porttitor. Nunc nisi ante, gravida at velit eu, aliquet sodales dui. Sed laoreet condimentum nisi a egestas. <a class="documentation" href="https://flkt.mx/pitaya/componentes.html#pestanias">Documentación en español</a>.</p><p>Donec interdum ante ut enim consequat, quis varius nulla dapibus. Vivamus mollis fermentum augue a varius. Vestibulum in sapien at lectus gravida lobortis vulputate sed metus. Duis scelerisque justo et maximus efficitur. Donec eu eleifend quam. Curabitur aliquet commodo sapien eget vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum vel aliquet nunc, finibus posuere lorem. Suspendisse consectetur volutpat est ut ornare.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-2">
-                <label for="tab2-2">Two</label>
-                <input id="tab2-2" name="tabs-two" type="radio">
-                <div class="tab2-2-2">
-                    <h4>Tab Two</h4>
-                    <div class="a-cote">
-                        <img src="../assets/img/banner-2.png" alt="">
-                        <p>Quisque sit amet turpis leo. Maecenas sed dolor mi. Pellentesque varius elit in neque ornare commodo ac non tellus. Mauris id iaculis quam. Donec eu felis quam. Morbi tristique lorem eget iaculis consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean at tellus eget risus tempus ultrices. Nam condimentum nisi enim, scelerisque faucibus lectus sodales at.</p>
-
-                    </div>
-                </div>
-            </div>
-            </div>
+<div class="tabs">
+  <div class="tab-2">
+    <label for="tab2-1">One</label>
+    <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+    <div class="tab-content">
+        <h4>Tab One</h4>
+        <div class="tabs-contents">
+            <img src="/assets/img/accompagnement-section1-1.jpg" alt="">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat id velit quis vestibulum. Nam id orci eu urna mollis porttitor. Nunc nisi ante, gravida at velit eu, aliquet sodales dui. Sed laoreet condimentum nisi a egestas. <a class="documentation" href="https://flkt.mx/pitaya/componentes.html#pestanias">Documentación en español</a>.</p><p>Donec interdum ante ut enim consequat, quis varius nulla dapibus. Vivamus mollis fermentum augue a varius. Vestibulum in sapien at lectus gravida lobortis vulputate sed metus. Duis scelerisque justo et maximus efficitur. Donec eu eleifend quam. Curabitur aliquet commodo sapien eget vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum vel aliquet nunc, finibus posuere lorem. Suspendisse consectetur volutpat est ut ornare.</p>
+        </div>
+    </div>
+  </div>
+  <div class="tab-2">
+    <label for="tab2-2">Two</label>
+    <input id="tab2-2" name="tabs-two" type="radio">
+    <div class="tab-content">
+        <h4>Tab Two</h4>
+      <div class="tabs-contents">
+        <img src="/assets/img/accompagnement-section1-2.jpg" alt="">
+      <p>Quisque sit amet turpis leo. Maecenas sed dolor mi. Pellentesque varius elit in neque ornare commodo ac non tellus. Mauris id iaculis quam. Donec eu felis quam. Morbi tristique lorem eget iaculis consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean at tellus eget risus tempus ultrices. Nam condimentum nisi enim, scelerisque faucibus lectus sodales at.</p>
+      </div>
+    </div>
+  </div>
+</div>
         </section>
 
         <section id="section2">
@@ -149,6 +149,9 @@ of Simple CSS Waves-->
                 </div>
         
             </div>
+            <div class="img-gauche-section2">
+                <img src="../assets/img/accompagnement-section1-2.jpg" alt="">
+            </div>
         </section>
         
                 <div id="droite-bas" >
@@ -163,7 +166,7 @@ of Simple CSS Waves-->
             <div class="info2">
                         <div class="gauche">
                             <div class="titre-gauche">
-                                <a href="/"><img src="../assets/img/logo-transparent.png" class="img-fluid" alt="logo trendjump"></a>
+                                <a href="/"><img src="/assets/img/logo-transparent.png" class="img-fluid" alt="logo trendjump"></a>
                             </div>
                             <div class="footer-text">
                                 <p>À TrendJump, nous sommes passionnés par l'innovation et l'excellence. Notre mission est de créer des expériences exceptionnelles qui laissent une empreinte durable. Nous croyons en la puissance de la créativité pour inspirer, engager et transformer. Chez TrendJump, chaque projet est une opportunité de repousser les limites et de créer quelque chose de vraiment unique.</p>

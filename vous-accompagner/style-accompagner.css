@@ -1,4 +1,6 @@
-
+html {
+  font-family: 'Lato', sans-serif !important;
+}
 #page {
   display: flex;
     justify-content: center;
@@ -11,9 +13,7 @@
 /* Onglets */
 #section1 {
   /* background: linear-gradient(to bottom, #ffffff 10%, #6ab5c8 50%, #ffffff 100%); */
-  background: #fff;
   color: #efedef;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.01em;
@@ -24,30 +24,6 @@
 h1 {
   font-size: 40px;
   line-height: 0.8em;
-  color: #000;
-}
-.tab2-1-1, .tab2-2-2 {
-  display: flex;
-}
-
-.a-cote {
-  display: flex;
-  flex-direction: column;
-}
-
-.a-cote img {
-  max-height: 200px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-right: 20px; /* Ajoute une marge à droite de l'image pour créer de l'espace entre l'image et le texte */
-}
-
-.a-cote p {
-  flex-grow: 1;
-}
-
-.tab2-1-1 h4, .tab2-2-2 h4 {
-  color: #7008cb;
 }
 
 
@@ -66,6 +42,22 @@ h1 {
     text-decoration: none;
     transform: rotate(45deg);
 }
+
+.tab-content h4 {
+  color: #000000;
+  font-weight: 700;
+}
+.tabs-contents {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.tabs-contents img {
+  width: auto;
+  height: 200px;
+  margin-right: 20px;
+}
+
 .documentation {
     color: #da84f2;
 }
@@ -85,6 +77,14 @@ select:focus {
   flex-wrap: wrap;
   margin: 0;
   overflow: hidden; }
+
+img, p {
+  display: flex;
+  justify-content: center;
+}
+  .tabs img {
+    max-width: 400px;
+  }
   .tabs [class^="tab"] label,
   .tabs [class*=" tab"] label {
     color: #da84f2;
@@ -146,19 +146,19 @@ select:focus {
 #section2 {
   width: 100%;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
   padding-bottom: 50px;
   padding-top: 50px;
-
 }
+
+.skills
 h1 {
-    font-family: 'Lato', sans-serif;
     font-weight:300;
     letter-spacing: 2px;
     font-size:48px;
   }
   p {
-    font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
     font-size:14px;
     color: #333333;
@@ -251,11 +251,21 @@ h1 {
   }
 
 
+.img-gauche-section2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-gauche-section2 img {
+  margin-top: 30px;
+  border-radius: 20px;
 
+}
 
   /***************** SECTION BARRES %  ***************/
 .skills{
-  width: 100%;
+  width: 50%;
   max-width: 600px;
   padding: 0 20px;
 }
@@ -343,6 +353,9 @@ h1 {
 
     /*********************** DARK MODE  ***********************/
 
+    body.dark {
+      background-color: #000;
+    }
     .dark .header {
       text-align:center;
       background: linear-gradient(60deg, rgb(95, 76, 124) 0%, rgb(45, 116, 118) 50%, rgb(124, 77, 126) 100%);
