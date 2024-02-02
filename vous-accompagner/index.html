@@ -17,11 +17,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">    <script>
+    <link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">    
+    <script>
         tailwind.config = {
             darkMode: "class",
         }
     </script>
+    
 </head>
 <body >
     <header id="myHeader">
@@ -30,8 +34,8 @@
     </svg>
         <nav id="navbar" class="hidden">
             <a href="/">Acceuil</a>
-            <a href="/vous-accompagner/">Accompagement</a>
-            <a href="/nous-contacer/">Contact</a>
+            <a href="/vous-accompagner/">Accompagnement</a>
+            <a href="/nous-contacter/">Contact</a>
             <button id="openmenu">
                 <span></span>
                 <span></span>
@@ -90,75 +94,347 @@ of Simple CSS Waves-->
     </div>     
     <main id="page">
 
-        <section id="section1">
-<div class="tabs">
-  <div class="tab-2">
-    <label for="tab2-1">One</label>
-    <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
-    <div class="tab-content">
-        <h4>Tab One</h4>
-        <div class="tabs-contents">
-            <img src="/assets/img/accompagnement-section1-1.jpg" alt="">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat id velit quis vestibulum. Nam id orci eu urna mollis porttitor. Nunc nisi ante, gravida at velit eu, aliquet sodales dui. Sed laoreet condimentum nisi a egestas. <a class="documentation" href="https://flkt.mx/pitaya/componentes.html#pestanias">Documentación en español</a>.</p><p>Donec interdum ante ut enim consequat, quis varius nulla dapibus. Vivamus mollis fermentum augue a varius. Vestibulum in sapien at lectus gravida lobortis vulputate sed metus. Duis scelerisque justo et maximus efficitur. Donec eu eleifend quam. Curabitur aliquet commodo sapien eget vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum vel aliquet nunc, finibus posuere lorem. Suspendisse consectetur volutpat est ut ornare.</p>
-        </div>
-    </div>
-  </div>
-  <div class="tab-2">
-    <label for="tab2-2">Two</label>
-    <input id="tab2-2" name="tabs-two" type="radio">
-    <div class="tab-content">
-        <h4>Tab Two</h4>
-      <div class="tabs-contents">
-        <img src="/assets/img/accompagnement-section1-2.jpg" alt="">
-      <p>Quisque sit amet turpis leo. Maecenas sed dolor mi. Pellentesque varius elit in neque ornare commodo ac non tellus. Mauris id iaculis quam. Donec eu felis quam. Morbi tristique lorem eget iaculis consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean at tellus eget risus tempus ultrices. Nam condimentum nisi enim, scelerisque faucibus lectus sodales at.</p>
-      </div>
-    </div>
-  </div>
-</div>
+        <section id="generic_price_table">
+                <div class="container">
+                    
+                    <!--BLOCK ROW START-->
+                    <div class="row">
+                        <div class="col-md-4">
+                        
+                            <!--PRICE CONTENT START-->
+                            <div class="generic_content clearfix"> 
+                                <div class="generic_head_price clearfix">
+                                    <div class="generic_head_content clearfix">                                    
+                                        <div class="head_bg"></div>
+                                        <div class="head">
+                                            <span>Collaboration</span>
+                                        </div>                                        
+                                    </div>                                    
+                                    <div class="generic_price_tag clearfix">	
+                                        <span class="price">
+                                            <span class="sign">€</span>
+                                            <span class="currency">50</span>
+                                            <span class="cent">.00</span>
+                                            <span class="month">/post</span>
+                                        </span>
+                                    </div>                                    
+                                </div>                                                            
+                                <div class="generic_feature_list">
+                                    <ul>
+                                        <li><span>1</span> post de 24h collaboratif</li>
+                                        <li><span>1</span> Story (+20€)</li>
+                                    </ul>
+                                </div>
+                                <!--//FEATURE LIST END-->
+                                
+                                <!--BUTTON START-->
+                                <div class="generic_price_btn clearfix">
+                                    <a class="" href="">En savoir plus</a>
+                                </div>
+                                <!--//BUTTON END-->
+                                
+                            </div>
+                            <!--//PRICE CONTENT END-->
+                                
+                        </div>
+                        
+                        <div class="col-md-4">
+                        
+                            <!--PRICE CONTENT START-->
+                            <div class="generic_content active clearfix">
+                                
+                                <!--HEAD PRICE DETAIL START-->
+                                <div class="generic_head_price clearfix">
+                                
+                                    <!--HEAD CONTENT START-->
+                                    <div class="generic_head_content clearfix">
+                                    
+                                        <!--HEAD START-->
+                                        <div class="head_bg"></div>
+                                        <div class="head">
+                                            <span>Communauté</span>
+                                        </div>
+                                        <!--//HEAD END-->
+                                        
+                                    </div>
+                                    <!--//HEAD CONTENT END-->
+                                    
+                                    <!--PRICE START-->
+                                    <div class="generic_price_tag clearfix">	
+                                        <span class="price">
+                                            <span class="sign">€</span>
+                                            <span class="currency">130</span>
+                                            <span class="cent">.00</span>
+                                            <span class="month">/k</span>
+                                        </span>
+                                    </div>
+                                    <!--//PRICE END-->
+                                    
+                                </div>                            
+                                <!--//HEAD PRICE DETAIL END-->
+                                
+                                <!--FEATURE LIST START-->
+                                <div class="generic_feature_list">
+                                    <ul>
+                                        <li><span>1.000</span> Abonnées</li>
+                                        <li><span>1</span> Story (Offerte)</li>
+                                    </ul>
+                                </div>
+                                <!--//FEATURE LIST END-->
+                                
+                                <!--BUTTON START-->
+                                <div class="generic_price_btn clearfix">
+                                    <a class="" href="">En savoir plus</a>
+                                </div>
+                                <!--//BUTTON END-->
+                                
+                            </div>
+                            <!--//PRICE CONTENT END-->
+                                
+                        </div>
+                        <div class="col-md-4">
+                        
+                            <!--PRICE CONTENT START-->
+                            <div class="generic_content clearfix">
+                                
+                                <!--HEAD PRICE DETAIL START-->
+                                <div class="generic_head_price clearfix">
+                                
+                                    <!--HEAD CONTENT START-->
+                                    <div class="generic_head_content clearfix">
+                                    
+                                        <!--HEAD START-->
+                                        <div class="head_bg"></div>
+                                        <div class="head">
+                                            <span>Pack</span>
+                                        </div>
+                                        <!--//HEAD END-->
+                                        
+                                    </div>
+                                    <!--//HEAD CONTENT END-->
+                                    
+                                    <!--PRICE START-->
+                                    <div class="generic_price_tag clearfix">	
+                                        <span class="price">
+                                            <span class="sign">€</span>
+                                            <span class="currency">150</span>
+                                            <span class="cent">.00</span>
+                                            <span class="month">/pack</span>
+                                        </span>
+                                    </div>
+                                    <!--//PRICE END-->
+                                    
+                                </div>                            
+                                <!--//HEAD PRICE DETAIL END-->
+                                
+                                <!--FEATURE LIST START-->
+                                <div class="generic_feature_list">
+                                    <ul>
+                                        <li><span>1.000</span> abonnées</li>
+                                        <li><span>1</span> Story</li>
+                                        <li><span>1</span> Post de 24h collaboratif</li>
+                                    </ul>
+                                </div>
+                                <!--//FEATURE LIST END-->
+                                
+                                <!--BUTTON START-->
+                                <div class="generic_price_btn clearfix">
+                                    <a class="" href="">En savoir plus</a>
+                                </div>
+                                <!--//BUTTON END-->
+                                
+                            </div>
+                            <!--//PRICE CONTENT END-->
+                                
+                        </div>
+                    </div>	
+                    <!--//BLOCK ROW END-->
+                    
+                </div>
         </section>
 
-        <section id="section2">
-            <div class="skills">
-        
-                <div class="skill">
-                    <div class="skill-name">Gestion d'Artistes</div>
-                    <div class="skill-bar">
-                        <div class="skill-per" per="90%" style="max-width:90%"></div>
+
+
+        <section id="section1">
+            <div class="cover-score-wrapper">
+                <div class="cover-score" style="opacity: 1;">
+              
+                  
+                  
+                  <!-- Jay Z -->
+                  <div class="cover" style="width: 120px;">
+                    <div class="shelf"></div>
+                    <div class="shelf-shadow"></div>
+                    <div class="cover-img cover-img-active" data-shadow-color="16,26,64" style="height: 120px; transform: perspective(730px) rotateX(14deg) rotateY(-1deg); box-shadow: rgba(16, 26, 64, 0) 0px 0px 1px, rgba(16, 26, 64, 0.1) -4px 1px 3px, rgba(16, 26, 64, 0.1) -11px 4px 6px, rgba(16, 26, 64, 0.1) -22px 8px 10px, rgba(16, 26, 64, 0.1) -37px 14px 15px, rgba(16, 26, 64, 0.1) -57px 21px 21px;">
+                      <div class="plastic" style="transform: translate(-1px, 0px);"></div>
+              
+                      
+                      <div class="image-card" style="background-image:url(https://raw.githubusercontent.com/hluebbering/web-design/main/assets/images/jayz.gif); background-size: cover;"></div>
+              
+                      <div style="background-image: url(https://i.scdn.co/image/ab67616d0000b2732a0e1044519b4da374703952);" class="img-fake"></div>
+                      
+                      
+                      
+              
+                      <div class="cd"></div>
                     </div>
-                </div>
-        
-                <div class="skill">
-                    <div class="skill-name">Organisation de Projets</div>
-                    <div class="skill-bar">
-                        <div class="skill-per" per="85%" style="max-width:85%"></div>
+                  </div>
+              
+                  
+                  <!-- Metro Boomin -->
+                  <div class="cover" style="width: 120px;">
+                    <div class="shelf"></div>
+                    <div class="shelf-shadow"></div>
+                    <div class="cover-img cover-img-active" data-shadow-color="16,26,64" style="height: 120px; transform: perspective(730px) rotateX(14deg) rotateY(-1deg); box-shadow: rgba(16, 26, 64, 0) 0px 0px 1px, rgba(16, 26, 64, 0.1) -4px 1px 3px, rgba(16, 26, 64, 0.1) -11px 4px 6px, rgba(16, 26, 64, 0.1) -22px 8px 10px, rgba(16, 26, 64, 0.1) -37px 14px 15px, rgba(16, 26, 64, 0.1) -57px 21px 21px;">
+                      <div class="plastic" style="transform: translate(-1px, 0px);"></div>
+              
+                      
+                      <div class="image-card" style="background-image:url(https://raw.githubusercontent.com/hluebbering/web-design/main/assets/images/metroboomin2.gif); background-size: cover;"></div>
+              
+                      <div style="background-image: url(https://assets.codepen.io/4927073/316743021_465848998921282_3524130263655009747_n.jpg);" class="img-fake"></div>
+                      
+                     
+              
+                      <div class="cd"></div>
                     </div>
-                </div>
-        
-                <div class="skill">
-                    <div class="skill-name">Stratégie Artistique</div>
-                    <div class="skill-bar">
-                        <div class="skill-per" per="80%" style="max-width:80%"></div>
+                  </div>
+              
+              
+                  <!-- Diddy -->
+                  <div class="cover" style="width: 120px;">
+                    <div class="shelf"></div>
+                    <div class="shelf-shadow"></div>
+                    <div class="cover-img cover-img-active" data-shadow-color="16,26,64" style="height: 120px; transform: perspective(730px) rotateX(14deg) rotateY(-1deg); box-shadow: rgba(16, 26, 64, 0) 0px 0px 1px, rgba(16, 26, 64, 0.1) -4px 1px 3px, rgba(16, 26, 64, 0.1) -11px 4px 6px, rgba(16, 26, 64, 0.1) -22px 8px 10px, rgba(16, 26, 64, 0.1) -37px 14px 15px, rgba(16, 26, 64, 0.1) -57px 21px 21px;">
+                      <div class="plastic" style="transform: translate(-1px, 0px);"></div>
+              
+                      <div class="image-card" style="background-image:url(https://raw.githubusercontent.com/hluebbering/web-design/main/assets/images/diddy.gif); background-size: cover;"></div>
+              
+                      <div style="background-image: url(https://i.scdn.co/image/ab67616d0000b273ac6a6549a4cacee199916f0b);" class="img-fake"></div>
+                      
+                      
+                     
+              
+                      <div class="cd"></div>
                     </div>
-                </div>
-        
-                <div class="skill">
-                    <div class="skill-name">Communication Artistique</div>
-                    <div class="skill-bar">
-                        <div class="skill-per" per="75%" style="max-width:75%"></div>
+                  </div>
+                  
+                  
+                  <!-- Drake -->
+                  <div class="cover" style="width: 120px;">
+                    <div class="shelf"></div>
+                    <div class="shelf-shadow"></div>
+                    <div class="cover-img cover-img-active" data-shadow-color="16,26,64" style="height: 120px; transform: perspective(730px) rotateX(14deg) rotateY(-1deg); box-shadow: rgba(16, 26, 64, 0) 0px 0px 1px, rgba(16, 26, 64, 0.1) -4px 1px 3px, rgba(16, 26, 64, 0.1) -11px 4px 6px, rgba(16, 26, 64, 0.1) -22px 8px 10px, rgba(16, 26, 64, 0.1) -37px 14px 15px, rgba(16, 26, 64, 0.1) -57px 21px 21px;">
+                      <div class="plastic" style="transform: translate(-1px, 0px);"></div>
+              
+                      
+                      <div class="image-card" style="background-image:url(https://assets.codepen.io/4927073/0_drakeir-ezgif.com-optimize.gif); background-size: cover; filter: brightness(1.25) saturate(1.25); background-position: 50% 50%;"></div>
+                      
+                      <div style="background-image: url(https://assets.codepen.io/4927073/0_drakeir-ezgif.com-optimize.gif);" class="img-fake"></div>
+                      
+                      
+                      
+                      
+                      <div class="cd"></div>
                     </div>
+                  </div>
+                  
+                  
+                  <!-- Kanye Graduation -->
+                  <div class="cover" style="width: 120px;">
+                    <div class="shelf"></div>
+                    <div class="shelf-shadow"></div>
+                    <div class="cover-img cover-img-active" data-shadow-color="16,26,64" style="height: 120px; transform: perspective(730px) rotateX(14deg) rotateY(-1deg); box-shadow: rgba(16, 26, 64, 0) 0px 0px 1px, rgba(16, 26, 64, 0.1) -4px 1px 3px, rgba(16, 26, 64, 0.1) -11px 4px 6px, rgba(16, 26, 64, 0.1) -22px 8px 10px, rgba(16, 26, 64, 0.1) -37px 14px 15px, rgba(16, 26, 64, 0.1) -57px 21px 21px;">
+                      <div class="plastic" style="transform: translate(-1px, 0px);"></div>
+              
+                      <div class="image-card" style="background-image:url(https://raw.githubusercontent.com/hluebbering/web-design/main/assets/images/graduation.gif); background-size: cover;"></div>
+              
+                      <div style="background-image: url(https://i.scdn.co/image/ab67616d0000b27326f7f19c7f0381e56156c94a);" class="img-fake"></div>
+                      
+                      
+              
+                      <div class="cd"></div>
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="cover" style="width: 120px;">
+                    <div class="shelf"></div>
+                    <div class="shelf-shadow"></div>
+                    <div class="cover-img cover-img-active" data-shadow-color="16,26,64" style="height: 120px; transform: perspective(730px) rotateX(14deg) rotateY(-1deg); box-shadow: rgba(16, 26, 64, 0) 0px 0px 1px, rgba(16, 26, 64, 0.1) -4px 1px 3px, rgba(16, 26, 64, 0.1) -11px 4px 6px, rgba(16, 26, 64, 0.1) -22px 8px 10px, rgba(16, 26, 64, 0.1) -37px 14px 15px, rgba(16, 26, 64, 0.1) -57px 21px 21px;">
+                      <div class="plastic" style="transform: translate(-1px, 0px);"></div>
+              
+                      <div class="image-card" style="background-image:url(https://raw.githubusercontent.com/hluebbering/web-design/main/assets/images/juicewrld.gif); background-size: cover;"></div>
+              
+                      <div style="background-image: url(https://i.scdn.co/image/ab67616d0000b2733e0698e4ae5ffb82a005aeeb);" class="img-fake"></div>
+                      
+                      
+                      
+              
+                      <div class="cd"></div>
+                    </div>
+                  </div>
+                  
+                  
+                  
+              
                 </div>
-        
-            </div>
-            <div class="img-gauche-section2">
-                <img src="../assets/img/accompagnement-section1-2.jpg" alt="">
-            </div>
+              </div>
         </section>
-        
-                <div id="droite-bas" >
-                    <a id="scrollToTop"><input onclick="toggleTheme()" class="container_toggle" type="checkbox" id="switch" name="mode">
-                        <label for="switch">Toggle</label></a>
-                    <a id="scrollToTop" href="#" onclick="scrollToTop()">↑</a>
+        <section id="section2">
+            <div class="tabs">
+                <div class="tab-2">
+                    <label for="tab2-1">Services</label>
+                    <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+                    <div class="tab-content">
+                        <h4>Nos Services d'Accompagnement</h4>
+                        <div class="tabs-contents">
+                            <img src="/assets/img/accompagnement-section1-1.jpg" alt="Illustration des services d'accompagnement">
+                            <p>Nous offrons des services d'accompagnement complets pour les artistes du digital. Que vous ayez besoin de conseils en stratégie, de formation technique ou de support créatif, notre équipe est là pour vous aider.</p>
+                            <p>Explorez nos services et découvrez comment nous pouvons vous aider à atteindre vos objectifs dans le monde du digital.</p>
+                            <a class="documentation" href="/services">En savoir plus sur nos services</a>.
+                        </div>
+                    </div>
                 </div>
+                <div class="tab-2">
+                    <label for="tab2-2">Projets Réalisés</label>
+                    <input id="tab2-2" name="tabs-two" type="radio">
+                    <div class="tab-content">
+                        <h4>Nos Réalisations</h4>
+                        <div class="tabs-contents">
+                            <img src="/assets/img/accompagnement-section1-2.jpg" alt="Illustration de projets réalisés">
+                            <p>Découvrez quelques-uns de nos projets récents dans le domaine du digital. Chaque projet témoigne de notre engagement envers l'excellence et de notre capacité à transformer des idées créatives en réalité.</p>
+                            <p>Explorez notre portfolio pour voir comment nous avons collaboré avec nos clients pour créer des solutions innovantes et réussies.</p>
+                            <a class="documentation" href="/portfolio">Voir notre portfolio complet</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <div id="droite-bas">
+            <div class="checkbox-wrapper">
+            <input class="tgl" id="switch" type="checkbox" onclick="toggleTheme()"/>
+            <label class="tgl-btn" for="switch">
+                <svg class="icon icon_sun" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11.9998" cy="11.9998" r="5.75375" fill="currentColor" />
+                    <g>
+                        <circle cx="3.08982" cy="6.85502" r="1.71143" transform="rotate(-60 3.08982 6.85502)" fill="currentColor" />
+                        <circle cx="3.0903" cy="17.1436" r="1.71143" transform="rotate(-120 3.0903 17.1436)" fill="currentColor" />
+                        <circle cx="12" cy="22.2881" r="1.71143" fill="currentColor" />
+                        <circle cx="20.9101" cy="17.1436" r="1.71143" transform="rotate(-60 20.9101 17.1436)" fill="currentColor" />
+                        <circle cx="20.9101" cy="6.8555" r="1.71143" transform="rotate(-120 20.9101 6.8555)" fill="currentColor" />
+                        <circle cx="12" cy="1.71143" r="1.71143" fill="currentColor" />
+                    </g>
+                    </circle>
+                </svg>
+                <svg class="icon icon_moon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 50 50">
+                    <path d="M 43.81 29.354 C 43.688 28.958 43.413 28.626 43.046 28.432 C 42.679 28.238 42.251 28.198 41.854 28.321 C 36.161 29.886 30.067 28.272 25.894 24.096 C 21.722 19.92 20.113 13.824 21.683 8.133 C 21.848 7.582 21.697 6.985 21.29 6.578 C 20.884 6.172 20.287 6.022 19.736 6.187 C 10.659 8.728 4.691 17.389 5.55 26.776 C 6.408 36.163 13.847 43.598 23.235 44.451 C 32.622 45.304 41.28 39.332 43.816 30.253 C 43.902 29.96 43.9 29.647 43.81 29.354 Z" fill="currentColor" />
+                </svg>
+            </label>
+        </div>
+        <a id="scrollToTop" href="#" onclick="scrollToTop()">↑</a>
+    </div>
     </main>
 
     <footer class="footer-section">
@@ -263,12 +539,31 @@ of Simple CSS Waves-->
         // }
     
             
+        // Function to toggle the theme
         function toggleTheme() {
-            if (document.body.classList.contains("dark"))
-                document.body.classList.remove("dark");
-            else
-                document.body.classList.add("dark");
-        }
+  const body = document.body;
+  // Toggle the "dark" class on the body
+  body.classList.toggle("dark");
+
+  // Check if the "dark" class is present
+  const isDarkMode = body.classList.contains("dark");
+
+  // Save the current theme mode in localStorage
+  localStorage.setItem("darkMode", isDarkMode);
+}
+
+// Check if dark mode is saved in localStorage and apply it on page load
+document.addEventListener("DOMContentLoaded", function () {
+  const body = document.body;
+  const savedDarkMode = localStorage.getItem("darkMode");
+
+  // If dark mode is saved, apply it to the body
+  if (savedDarkMode === "true") {
+    body.classList.add("dark");
+  }
+});
+
+
 
 
 
@@ -328,6 +623,8 @@ of Simple CSS Waves-->
         });
     });
 });
+
+
     </script>
 </body>
 </html>

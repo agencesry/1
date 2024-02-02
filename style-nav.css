@@ -202,57 +202,81 @@
     transition: background-color 0.3s, color 0.3s;
   }
   
-  
   #droite-bas label {
-    cursor: pointer;
-    text-indent: 200px;
-    width: 55px;
-    height: 30px;
-    background: var(--lightBtn);
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
     position: fixed;
-    background-color: #000;
     top: 20px;
     right: 20px;
-  }
-  
-  
-  #droite-bas label:after {
-    content: '';
-    background: #fdfdfd;
-    width: 20px;
-    height: 20px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    position: absolute;
-    top: 5px;
-    left: 4px;
-   transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
-  }
-  
-  input:checked + #droite-bas label {
-    background: #ffffff;
-  }
-  
-  input:checked + #droite-bas label:after {
-    left: calc(100% - 5px);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
+    background-color: #000;
+}
 
 
 
+/* Dark Mode Toggle Button */
+.checkbox-wrapper .tgl {
+  display: none;
+}
+.checkbox-wrapper .tgl + .tgl-btn {
+  background: darken(#fff, 80%);
+  border-radius: 2em;
+  padding: 6px;
+  transition: all 0.4s ease;
+  outline: 0;
+  display: block;
+  width: 4em;
+  height: 2em;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox-wrapper .tgl + .tgl-btn::before,
+.checkbox-wrapper .tgl + .tgl-btn::after {
+  position: relative;
+  display: block;
+  content: "";
+  height: 100%;
+}
+.checkbox-wrapper .tgl + .tgl-btn::before {
+  display: none;
+  width: 50%;
+}
+.checkbox-wrapper .tgl + .tgl-btn::after {
+  left: 0;
+  border-radius: 50%;
+  background: #fff;
+  width: unset;
+  aspect-ratio: 1/1;
+  transition: all 0.2s ease;
+}
+.checkbox-wrapper .tgl:checked + .tgl-btn {
+  background: #f0f0f0;
+}
+.checkbox-wrapper .tgl:checked + .tgl-btn::after {
+  transform: translateX(150%);
+  background: darken(#fff, 80%);
+}
+.checkbox-wrapper .tgl:hover + .tgl-btn {
+  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.75),
+      0px 0px 30px 0 rgba(255, 255, 255, 0.5),
+      0px 0px 60px 0 rgba(255, 255, 255, 0.25);
+}
+.checkbox-wrapper .icon {
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-invert);
+}
+.checkbox-wrapper .icon_sun {
+  left: 10%;
+}
+.checkbox-wrapper .icon_moon {
+  right: 10%;
+}
 
+  
 
 
 .dark nav {
@@ -307,3 +331,6 @@
 .dark #droite-bas label:after {
     background: #ffffff; /* Couleur du point en mode sombre */
   }
+
+
+

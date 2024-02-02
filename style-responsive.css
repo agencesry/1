@@ -137,9 +137,22 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .dark #section1 {
+      background: #000;
+    }
     #section2 {
         grid-template-columns: repeat(1, 1fr);
      }
+     section {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      min-height: 100vh;
+      overflow: hidden;
+      flex-direction: column;
+  }
 
      .dark .info1,
 .dark .info2 {
@@ -289,7 +302,6 @@
     text-align: center;
     padding: 20px;
     color: #444;
-    border: 1px solid #eee;
     border-radius: 10px;
   }
   
@@ -362,3 +374,39 @@
 
 
 
+/***********ACCOMPAGNEMENT*************/
+
+
+@media only screen and (max-width: 880px) {
+  #section4 {
+    height: 160vh;
+  }
+  #section4 {
+    display: flex;
+    flex-direction: column;
+  }
+  .imageContainer {
+    width: 130vh;
+    height: 90vh;
+    max-width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 6px solid #000;
+    border-radius: 60px;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    margin-right: 20px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+#section4 {
+    height: 260vh;
+}
+
+}

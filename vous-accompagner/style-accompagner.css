@@ -1,17 +1,664 @@
 html {
   font-family: 'Lato', sans-serif !important;
 }
-#page {
+
+/*************** SECTION 0 ***************/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,700,900italic,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+
+/*PRICE COLOR CODE START*/
+
+#generic_price_table .col-md-4{
+  width:30%;
+  margin: 15px;
+}
+
+#generic_price_table .row {
   display: flex;
-    justify-content: center;
-    flex-direction: column;
+}
+
+#generic_price_table {
+  display: flex !important;
+}
+#generic_price_table .generic_content{
+	background-color: #fff;
+}
+
+
+#generic_price_table .generic_content .generic_head_price{
+	background-color: #f6f6f6;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg{
+	border-color: #e4e4e4 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e4e4e4;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_head_content .head span{
+	color: #525252;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign{
+    color: #414141;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency{
+    color: #414141;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .cent{
+    color: #414141;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_price_tag .month{
+    color: #414141;
+}
+
+#generic_price_table .generic_content .generic_feature_list ul li{	
+	color: #a7a7a7;
+}
+
+#generic_price_table .generic_content .generic_feature_list ul li span{
+	color: #414141;
+}
+#generic_price_table .generic_content .generic_feature_list ul li:hover{
+	background-color: #E4E4E4;
+	border-left: 5px solid #ed7eed;
+
+
+}
+
+#generic_price_table .generic_content .generic_price_btn a{
+	border: 1px solid #ed7eed; 
+    color: #ed7eed;
+} 
+
+#generic_price_table .generic_content.active .generic_head_price .generic_head_content .head_bg,
+#generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg{
+	border-color: rgb(133, 193, 201) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0)rgb(133, 193, 201);
+	color: #fff;
+  background: linear-gradient(60deg, rgb(170, 151, 209) 0%, rgb(133, 193, 201) 50%, rgb(202, 155, 205) 100%);
+
+}
+
+#generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head span,
+#generic_price_table .generic_content.active .generic_head_price .generic_head_content .head span{
+	color: #fff;
+}
+
+#generic_price_table .generic_content:hover .generic_price_btn a,
+#generic_price_table .generic_content.active .generic_price_btn a{
+	background-color: #ed7eed;
+	color: #fff;
+} 
+#generic_price_table{
+	margin: 50px 0 50px 0;
+    font-family: 'Raleway', sans-serif;
+}
+.row .table{
+    padding: 28px 0;
+}
+
+/*PRICE BODY CODE START*/
+
+#generic_price_table .generic_content{
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+
+#generic_price_table .generic_content .generic_head_price {
+	margin: 0 0 20px 0;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_head_content{
+	margin: 0 0 50px 0;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg{
+    border-style: solid;
+    border-width: 90px 1411px 23px 399px;
+	position: absolute;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_head_content .head{
+	padding-top: 40px;
+	position: relative;
+	z-index: 1;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_head_content .head span{
+    font-family: "Raleway",sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_price_tag{
+	padding: 0 0 20px;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_price_tag .price{
+	display: block;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign{
+    display: inline-block;
+    font-family: "Lato",sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency{
+    font-family: "Lato",sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 60px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .cent{
+    display: inline-block;
+    font-family: "Lato",sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    vertical-align: bottom;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_price_tag .month{
+    font-family: "Lato",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    vertical-align: bottom;
+}
+
+#generic_price_table .generic_content .generic_feature_list ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#generic_price_table .generic_content .generic_feature_list ul li{
+	font-family: "Lato",sans-serif;
+	font-size: 18px;
+	padding: 15px 0;
+	transition: all 0.3s ease-in-out 0s;
+}
+#generic_price_table .generic_content .generic_feature_list ul li:hover{
+	transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+
+}
+#generic_price_table .generic_content .generic_feature_list ul li .fa{
+	padding: 0 10px;
+}
+#generic_price_table .generic_content .generic_price_btn{
+	margin: 20px 0 32px;
+}
+
+#generic_price_table .generic_content .generic_price_btn a{
+    border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    display: inline-block;
+    font-family: "Lato",sans-serif;
+    font-size: 18px;
+    outline: medium none;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#generic_price_table .generic_content,
+#generic_price_table .generic_content:hover,
+#generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg,
+#generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg,
+#generic_price_table .generic_content .generic_head_price .generic_head_content .head h2,
+#generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head h2,
+#generic_price_table .generic_content .price,
+#generic_price_table .generic_content:hover .price,
+#generic_price_table .generic_content .generic_price_btn a,
+#generic_price_table .generic_content:hover .generic_price_btn a{
+	transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+} 
+
+.text-center h1,
+.text-center h1 a{
+	color: #7885CB;
+	font-size: 30px;
+	font-weight: 300;
+	text-decoration: none;
+}
+.demo-pic{
+	margin: 0 auto;
+}
+.demo-pic:hover{
+	opacity: 0.7;
+}
+
+#generic_price_table_home ul{
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	display: table;
+}
+#generic_price_table_home li{
+	float: left;
+}
+#generic_price_table_home li + li{
+	margin-left: 10px;
+	padding-bottom: 10px;
+}
+#generic_price_table_home li a{
+	display: block;
+	width: 50px;
+	height: 50px;
+	font-size: 0px;
+}
+#generic_price_table_home .blue{
+	background: #3498DB;
+	transition: all 0.3s ease-in-out 0s;
+}
+#generic_price_table_home .emerald{
+	background: #2ECC71;
+	transition: all 0.3s ease-in-out 0s;
+}
+#generic_price_table_home .grey{
+	background: #7F8C8D;
+	transition: all 0.3s ease-in-out 0s;
+}
+#generic_price_table_home .midnight{
+	background: #34495E;
+	transition: all 0.3s ease-in-out 0s;
+}
+#generic_price_table_home .orange{
+	background: #E67E22;
+	transition: all 0.3s ease-in-out 0s;
+}
+#generic_price_table_home .purple{
+	background: #9B59B6;
+	transition: all 0.3s ease-in-out 0s;
+}
+#generic_price_table_home .red{
+	background: #E74C3C;
+	transition:all 0.3s ease-in-out 0s;
+}
+#generic_price_table_home .turquoise{
+	background: #1ABC9C;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+#generic_price_table_home .blue:hover,
+#generic_price_table_home .emerald:hover,
+#generic_price_table_home .grey:hover,
+#generic_price_table_home .midnight:hover,
+#generic_price_table_home .orange:hover,
+#generic_price_table_home .purple:hover,
+#generic_price_table_home .red:hover,
+#generic_price_table_home .turquoise:hover{
+	border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+	transition: all 0.3s ease-in-out 0s;
+}
+#generic_price_table_home .divider{
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+#generic_price_table_home .divider span{
+	width: 100%;
+	display: table;
+	height: 2px;
+	background: #ddd;
+	margin: 50px auto;
+	line-height: 2px;
+}
+#generic_price_table_home .itemname{
+	text-align: center;
+	font-size: 50px ;
+	padding: 50px 0 20px ;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 40px;
+	text-decoration: none;
+    font-weight: 300;
+}
+#generic_price_table_home .itemnametext{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+#generic_price_table_home .footer{
+	padding:40px 0;
+}
+
+.price-heading{
+    text-align: center;
+}
+.price-heading h1{
+	color: #666;
+	margin: 0;
+	padding: 0 0 50px 0;
+}
+.demo-button {
+    background-color: #333333;
+    color: #ffffff;
+    display: table;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    outline-color: -moz-use-text-color;
+    outline-style: none;
+    outline-width: medium ;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.bottom_btn{
+	background-color: #333333;
+    color: #ffffff;
+    display: table;
+    font-size: 28px;
+    margin: 60px auto 20px;
+    padding: 10px 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.demo-button:hover{
+	background-color: #666;
+	color: #FFF;
+	text-decoration:none;
+	
+}
+.bottom_btn:hover{
+	background-color: #666;
+	color: #FFF;
+	text-decoration:none;
+}
+
+
+@media (max-width: 320px) {	
+}
+
+@media (max-width: 767px) {
+	#generic_price_table .generic_content{
+		margin-bottom:75px;
+	}
+  #generic_price_table .col-md-4 {
     width: 100%;
+    margin: 0;
+}
+.dark #generic_price_table .col-md-4 {
+  background-color: #000;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	#generic_price_table .col-md-3{
+		width:50%;
+	}
+	
+	#generic_price_table .col-md-4{
+		width:100%;
+	}
+	
+	#generic_price_table .generic_content{
+		margin-bottom:75px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+@media (max-width: 1060px) {
+  #generic_price_table .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+}
+#generic_price_table_home{
+	 font-family: 'Raleway', sans-serif;
+}
+
+/******************* SECTION 1 *****************/
+
+
+#section1 {
+  height: 80vh;
+  margin: auto;
+}
+
+.cover-score {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Trois éléments par ligne */
+  margin: auto;
+  padding: 30px;
+  gap: 30px;
+  padding-left: 10vh;
+  padding-top: 10vh;
+}
+
+.cover-score .cover {
+  margin-right: 50px;
+  margin-bottom: 26px;
+  position: relative;
+}
+
+.cover-score .cover:after {
+  content: "";
+  background: url("https://pudding.cool/2020/12/judge-my-spotify/assets/images/shelf-2.png");
+  position: absolute;
+  display: none;
+  z-index: -1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cover-score .cover .cover-img {
+  transform: perspective(1090px) rotateX(10deg);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.cover-score .cover .cover-img img {
+  -webkit-filter: saturate(0.9);
+  filter: saturate(0.9);
+}
+.cover-score .cover .cover-img .img-fake {
+  position: absolute;
+  z-index: -1;
+      top: -1px;
+    left: 0;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+  background-size: cover;
+  -webkit-transform: translate(-1px, 0) scaleY(0.99);
+  -ms-transform: translate(-1px, 0) scaleY(0.99);
+  transform: translate(-1px, 0) scaleY(0.99);
+  -webkit-filter: brightness(0.94) blur(0.2px) saturate(0.9);
+  filter: brightness(0.94) blur(0.2px) saturate(0.9);
+}
+.cover-score .cover .cover-img .plastic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: calc(100% + 2px);
+  height: calc(100% - 1px);
+  background: url(https://pudding.cool/2021/10/judge-my-music/assets/images/plastic-small.jpg);
+  background-size: contain;
+  mix-blend-mode: screen;
+  opacity: 1;
+  z-index: 100000;
+  mix-blend-mode: difference;
+  opacity: 0.35;
+}
+.cover-score .cover .shelf {
+  background: url("https://pudding.cool/2021/10/judge-my-music/assets/images/shelf-3.png");
+  width: 155px;
+  height: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 17px;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translate(-8px, 11px);
+  -ms-transform: translate(-8px, 11px);
+  transform: translate(-8px, 11px);
+  z-index: 100;
+  -webkit-transform: translate(calc((100% + 15px) * -0.0516129032), calc(65%));
+  -ms-transform: translate(calc((100% + 15px) * -0.0516129032), calc(65%));
+  transform: translate(calc((100% + 15px) * -0.0516129032), calc(65%));
+  height: calc((100% + 15px) * 0.109677419);
+  width: calc(100% + 15px);
+}
+.cover-score .cover .shelf:after {
+  content: "";
+  background: -o-linear-gradient(
+      330deg,
+      rgba(255, 255, 255, 0) 42%,
+      rgba(0, 0, 0, 0.15) 45%,
+      rgba(0, 0, 0, 0.35) 65%
+    ),
+    -o-linear-gradient(70deg, rgba(255, 255, 255, 0) 38%, rgba(0, 0, 0, 0.25)
+          45%, rgba(0, 0, 0, 0.23) 55%, rgba(0, 0, 0, 0.13) 75%),
+    -o-radial-gradient(50% 100%, ellipse, rgba(0, 0, 0, 0.15) 3%, rgba(
+            255,
+            255,
+            255,
+            0
+          )
+          40%);
+  background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 42%,
+      rgba(0, 0, 0, 0.15) 45%,
+      rgba(0, 0, 0, 0.35) 65%
+    ),
+    linear-gradient(
+      20deg,
+      rgba(255, 255, 255, 0) 38%,
+      rgba(0, 0, 0, 0.25) 45%,
+      rgba(0, 0, 0, 0.23) 55%,
+      rgba(0, 0, 0, 0.13) 75%
+    ),
+    radial-gradient(
+      ellipse at 50% 100%,
+      rgba(0, 0, 0, 0.15) 3%,
+      rgba(255, 255, 255, 0) 40%
+    );
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 9px;
+  left: 0;
+  -webkit-transform: translate(0, 100%) scaleY(-0.5) scaleX(0.85);
+  -ms-transform: translate(0, 100%) scaleY(-0.5) scaleX(0.85);
+  transform: translate(0, 100%) scaleY(-0.5) scaleX(0.85);
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-filter: blur(6px);
+  filter: blur(6px);
+}
+.cover-score .cover .shelf-shadow {
+  width: 151px;
+  height: 13px;
+  position: absolute;
+  right: 0;
+  margin: 0 auto;
+  left: 0;
+  bottom: -1px;
+  z-index: -1;
+  -webkit-transform: translate(-6px, 0);
+  -ms-transform: translate(-6px, 0);
+  transform: translate(-6px, 0);
+  display: none;
+}
+.cover-score .cover img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.cover-score-wrapper {
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.cd {
+  background-image: url(https://accord.dk/cdn/shop/t/9/assets/cd.png?v=42367682729110643861600767949);
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  top: 0;
+  left: 50px;
+}
+
+.image-card {
+  height: 120px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Ajustements pour une meilleure réactivité */
+@media (max-width: 1200px) {
+  .cover-score {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .cover-score {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .cover-score {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cover-score {
+    grid-template-columns: 1fr;
+  }
 }
 
 
 
-/* Onglets */
-#section1 {
+/**************** SECTION 2  **************/
+#section2 {
   /* background: linear-gradient(to bottom, #ffffff 10%, #6ab5c8 50%, #ffffff 100%); */
   color: #efedef;
   font-size: 16px;
@@ -236,126 +883,37 @@ h1 {
       transform: translate3d(85px,0,0);
     }
   }
-  /*Shrinking for mobile*/
-  @media (max-width: 768px) {
-    .waves {
-      height:40px;
-      min-height:40px;
-    }
-    .content {
-      height:30vh;
-    }
-    h1 {
-      font-size:24px;
-    }
-  }
-
-
-.img-gauche-section2 {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.img-gauche-section2 img {
-  margin-top: 30px;
-  border-radius: 20px;
-
-}
-
-  /***************** SECTION BARRES %  ***************/
-.skills{
-  width: 50%;
-  max-width: 600px;
-  padding: 0 20px;
-}
-
-.skill-name{
-  font-size: 18px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
-  margin: 20px 0;
-}
-
-.skill-bar{
-  height: 14px;
-  background: #444;
-  border-radius: 3px;
-}
-
-.skill-per{
-  height: 14px;
-  background: linear-gradient(135deg,#ed4d5e,#7008cb 31%,#3f0198 69%,#1bb7f7);
-  border-radius: 3px;
-  position: relative;
-  animation: fillBars 3.5s 1;
-}
-
-.skill-per::before{
-  content: attr(per);
-  position: absolute;
-  padding: 4px 6px;
-  background: #f1f1f1;
-  border-radius: 4px;
-  font-size: 12px;
-  top: -35px;
-  right: 0;
-  transform: translateX(50%);
-}
-
-.skill-per::after{
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: #f1f1f1;
-  top: -20px;
-  right: 0;
-  transform: translateX(50%) rotate(45deg);
-  border-radius: 2px;
-}
-
-@keyframes fillBars{
-  from{
-    width: 0;
-  }
-  to{
-    width: 100%;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /*********************** DARK MODE  ***********************/
 
     body.dark {
       background-color: #000;
     }
+    .dark .cover-score {
+      background-color: #000000; /* Set background color to white */
+    }
+    
+    .dark .cover-score .cover .img-fake {
+      background-color: #fff; /* Set background color to white */
+    }
+    
+    .dark .cover-score .cover .plastic {
+      mix-blend-mode: screen;
+      opacity: 1;
+      mix-blend-mode: difference;
+      opacity: 0.35;
+    }
+    
+    .dark .cover-score .cover .shelf:after {
+      background: rgba(255, 255, 255, 0.5); /* Set background color to white with some opacity */
+      -webkit-filter: blur(6px) brightness(1.2); /* Adjust filter properties for a white shadow effect */
+      filter: blur(6px) brightness(1.2);
+    }
+    
+    .dark .cover-score .cover .shelf-shadow {
+      background-color: #fff; /* Set background color to white */
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Set box shadow to white with some opacity */
+    }
+    
     .dark .header {
       text-align:center;
       background: linear-gradient(60deg, rgb(95, 76, 124) 0%, rgb(45, 116, 118) 50%, rgb(124, 77, 126) 100%);
@@ -378,43 +936,15 @@ h1 {
       fill: #000; /* Couleur foncée pour la quatrième vague */
     }
   
-    /***************** SECTION BARRES % (DARK MODE) ***************/
-.dark .skills {
-  background: #000; /* Dark mode background color */
-  color: #f1f1f1; /* Dark mode text color */
+.dark .tab-content h4 {
+  color: #ffffff;
+  font-weight: 700;
 }
-
-.dark .skill-name {
-  color: #ccc; /* Dark mode text color */
-}
-
-.dark .skill-bar {
-  background: #666; /* Dark mode color for the skill bar */
-}
-
-.dark .skill-per {
-  background: linear-gradient(135deg, #ed4d5e, #7008cb 31%, #3f0198 69%, #1bb7f7);
-}
-
-.dark .skill-per::before {
-  background: #1a1a1a; /* Dark mode background color for the tooltip */
-  color: #f1f1f1; /* Dark mode text color for the tooltip */
-}
-
-.dark .skill-per::after {
-  background: #1a1a1a; /* Dark mode background color for the tooltip */
-  border-color: transparent transparent #1a1a1a transparent; /* Dark mode border color for the tooltip */
-}
-
-.dark #page {
-  background: #000;
-}
-
 
 /********************* SECTION 1 DARK  **********************/
 
 /* Onglets */
-.dark #section1 {
+.dark #section2 {
   /* background: linear-gradient(to bottom, #000000 10%, #507872 50%, #000000 100%); */
   background: #000;
   color: #ffffff;
@@ -474,4 +1004,80 @@ h1 {
 
 .dark .tabs .tab-2:last-child [type="radio"]:checked + div {
   margin-left: -100%;
+}
+
+
+/*PRICE COLOR CODE START*/
+
+/* Inversion des couleurs pour le mode sombre */
+.dark #generic_price_table .generic_content {
+  background-color: #161616;
+  color: #fff;
+}
+
+.dark #generic_price_table .generic_content .generic_head_price {
+  background-color: #1a1a1a;
+}
+
+.dark #generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg {
+  border-color: #1a1a1a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #1a1a1a;
+}
+
+.dark #generic_price_table .generic_content .generic_head_price .generic_head_content .head span {
+  color: #fff;
+}
+
+.dark #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign {
+  color: #bfbfbf;
+}
+
+.dark #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency {
+  color: #bfbfbf;
+}
+
+.dark #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .cent {
+  color: #bfbfbf;
+}
+
+.dark #generic_price_table .generic_content .generic_head_price .generic_price_tag .month {
+  color: #bfbfbf;
+}
+
+.dark #generic_price_table .generic_content .generic_feature_list ul li {
+  color: #5a5a5a;
+}
+
+.dark #generic_price_table .generic_content .generic_feature_list ul li span {
+  color: #bfbfbf;
+}
+
+.dark #generic_price_table .generic_content .generic_feature_list ul li:hover {
+  background-color: #4d4d4d;
+  border-left: 5px solid #ed7eed;
+}
+
+.dark #generic_price_table .generic_content .generic_price_btn a {
+  border: 1px solid #ed7eed;
+  color: #ed7eed;
+}
+
+.dark #generic_price_table .generic_content.active .generic_head_price .generic_head_content .head_bg,
+.dark #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg {
+  border-color: rgb(133, 193, 201) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(133, 193, 201);
+  color: #000;
+  background: linear-gradient(60deg, rgb(170, 151, 209) 0%, rgb(133, 193, 201) 50%, rgb(202, 155, 205) 100%);
+}
+
+.dark #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head span,
+.dark #generic_price_table .generic_content.active .generic_head_price .generic_head_content .head span {
+  color: #000;
+}
+
+.dark #generic_price_table .generic_content:hover .generic_price_btn a,
+.dark #generic_price_table .generic_content.active .generic_price_btn a {
+  background-color: #ed7eed;
+  color: #000;
+}
+.row .table {
+  padding: 28px 0;
 }
