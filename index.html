@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="/style-nav.css">      
     <link rel="stylesheet" href="/style-responsive.css">
+    <link rel="stylesheet" href="waves.css">
     <link rel="icon" href="/assets/img/favico.ico" type="image/x-icon">
     <script src="script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -50,16 +51,7 @@
 
     </div>     
     <main id="page">
-        <div id="home" class="relative flex flex-col h-[100vh] items-center justify-center bg-white dark:bg-black transition-bg">
-            <div class="absolute inset-0 overflow-hidden">
-                <div class="jumbo absolute -inset-[10px] opacity-50"></div>
-            </div>
-            <h1 class="relative flex items-center text-5xl font-bold text-gray-800 dark:text-white dark:opacity-80 transition-colors">
-                Trend
-                <span class="ml-1 rounded-xl bg-current p-2 text-[0.7em] leading-none">
-                    <span class="text-white dark:text-black">Jump</span>
-                </span>
-            </h1>
+
    
             
         <!-- <textarea readonly="readonly" class="mailToCopy">agencesry@gmail.com</textarea>
@@ -69,6 +61,28 @@
                 <a href="./mentionslegales.html" class="mentions-legales">mentions légales</a>
             </div>
         </div> -->
+        <!--Content before waves-->
+    <div class="inner-header flex">
+        <h1 class="texte relative flex items-center text-5xl font-bold text-gray-800 dark:text-white dark:opacity-80 transition-colors">
+            Trend
+            <span class="ml-1 rounded-xl bg-current p-2 text-[0.7em] leading-none">
+                <span class="text-white dark:text-black">Jump</span>
+            </span>
+        </h1>
+        </div>
+        <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
         </div>
 
 
@@ -143,39 +157,6 @@
                 <div class="span base1">Nous exellons en</div>
                 <div class="span" id="sliderValue1"></div>
               </div>
-              <section id="section2">
-
-                <div class="card">
-                  <img src="/assets/img/rencontre.jpg" alt="rencontre" />
-            
-                  <div class="card-content">
-                    <p>RENCONTRE</p>
-                    <p>On se fixe un appel pour échanger ensemble sur vos besoin, vos attentes et vos questions.</p>
-                  </div>
-                </div>
-            
-                <div class="card">
-                  <img src="/assets/img/devis.png" alt="devis" />
-            
-                  <div class="card-content">
-                    <p>DEVIS</p>
-                    <p>Je vous envoie une proposition d’accompagnement sur-mesure avec un devis valable 15 jours.                    </p>
-                  </div>
-                </div>
-            
-                <div class="card">
-                  <img src="/assets/img/lancement.jpg" alt="lancement" />
-            
-                  <div class="card-content">
-                    <p>LANCEMENT</p>
-                    <p>Une fois le devis accepté et le paiement effectué, on commence la collaboration à la date convenue.</p>
-                  </div>
-                </div>
-              </section>
-
-
-
-
 
               <section id="section3" class="home">
                     <div class="description">
@@ -246,7 +227,7 @@
 
                     <div class="imageContainer">
                         <div class="imageContainerInner">
-                            <video id="videoElement" src="assets/img/teaser-elihca.mp4" autoplay loop muted data-iswebcam="false" poster="https://images.pexels.com/videos/8688878/pexels-photo-8688878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" crossorigin="anonymous" preload="metadata" type="video/mp4"></video>
+                            <video id="videoElement" src="assets/img/teaser-elihca.mp4" autoplay loop muted data-iswebcam="false" poster="assets/img/Cover_Chouchou.jpg" crossorigin="anonymous" preload="metadata" type="video/mp4"></video>
                             <div class="flash"></div>
                         </div>
                         <div class="controls">
@@ -836,6 +817,8 @@ document.querySelector(".camerabutton").addEventListener("click", function () {
 	thumbnailImage.src = thumbnailDataURL;
 });
 
+
+
 let thumbnailButton = document.querySelector(".thumbnail");
 thumbnailButton.addEventListener("click", function () {
 	let heart = document.createElement("span");
@@ -852,8 +835,6 @@ thumbnailButton.addEventListener("click", function () {
 		thumbnailButton.removeChild(heart);
 	}, 2000);
 });
-
-
 
 </script>
 </body>

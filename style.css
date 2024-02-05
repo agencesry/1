@@ -18,6 +18,22 @@ overflow: hidden;
 }
 }
 
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  background: url(/assets/img/clair5.jpg);
+  background-size: cover;
+}
+.dark .inner-header {
+  background: url(/assets/img/foncé.jpg);
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+}
 /* 
 
 #fixedlink {
@@ -38,67 +54,6 @@ padding: 20px;
 .dark #fixedlink {
   color: white;
 } */
-
-
-@keyframes jumbo {
-    from {
-        background-position: 50% 50%, 50% 50%;
-    }
-    to {
-        background-position: 350% 50%, 350% 50%;
-    }
-}
-
-.jumbo {
-    --stripes: repeating-linear-gradient(
-        100deg,
-        #fff 0%,
-        #fff 7%,
-        transparent 10%,
-        transparent 12%,
-        #fff 16%
-    );
-    --stripesDark: repeating-linear-gradient(
-        100deg,
-        #000 0%,
-        #000 7%,
-        transparent 10%,
-        transparent 12%,
-        #000 16%
-    );
-    --rainbow: repeating-linear-gradient(
-        100deg,
-        #60a5fa 10%,
-        #e879f9 15%,
-        #60a5fa 20%,
-        #5eead4 25%,
-        #60a5fa 30%
-    );
-    background-image: var(--stripes), var(--rainbow);
-    background-size: 300%, 200%;
-    background-position: 50% 50%, 50% 50%;
-
-    filter: blur(10px) invert(100%);
-
-    mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%);
-
-    pointer-events: none;
-}
-
-.jumbo::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: var(--stripes), var(--rainbow);
-    background-size: 200%, 100%;
-    animation: jumbo 60s linear infinite;
-    background-attachment: fixed;
-    mix-blend-mode: difference;
-}
-
-
-
-
 
 *,
 *::before,
@@ -395,7 +350,53 @@ section {
 
 
 
+.dark .cover-score {
+  background-color: #000000; /* Set background color to white */
+}
 
+.dark .cover-score .cover .img-fake {
+  background-color: #fff; /* Set background color to white */
+}
+
+.dark .cover-score .cover .plastic {
+  mix-blend-mode: screen;
+  opacity: 1;
+  mix-blend-mode: difference;
+  opacity: 0.35;
+}
+
+.dark .cover-score .cover .shelf:after {
+  background: rgba(255, 255, 255, 0.5); /* Set background color to white with some opacity */
+  -webkit-filter: blur(6px) brightness(1.2); /* Adjust filter properties for a white shadow effect */
+  filter: blur(6px) brightness(1.2);
+}
+
+.dark .cover-score .cover .shelf-shadow {
+  background-color: #fff; /* Set background color to white */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Set box shadow to white with some opacity */
+}
+
+.dark .header {
+  text-align:center;
+  background: linear-gradient(60deg, rgb(95, 76, 124) 0%, rgb(45, 116, 118) 50%, rgb(124, 77, 126) 100%);
+  color:white;
+}
+
+.dark .parallax use:nth-child(1) {
+  fill: rgba(0, 0, 0, 0.7); /* Couleur foncée pour la première vague */
+}
+
+.dark .parallax use:nth-child(2) {
+  fill: rgba(0, 0, 0, 0.5); /* Couleur foncée pour la deuxième vague */
+}
+
+.dark .parallax use:nth-child(3) {
+  fill: rgba(0, 0, 0, 0.3); /* Couleur foncée pour la troisième vague */
+}
+
+.dark .parallax use:nth-child(4) {
+  fill: #000; /* Couleur foncée pour la quatrième vague */
+}
 
 
 
@@ -679,63 +680,6 @@ section {
   }
 }
 
-/* CARD */
-
-#section2 {
-  gap: 30px;
-  padding: 80px 40px 40px 80px;
-  background: linear-gradient(180deg, #fff, #aea4e3);
-}
-
-
-.card {
-  width: min(100%, 500px);
-  background: rgba(255, 255, 255);
-  border-radius: 16px;
-  z-index: 5;
-}
-
-.card > img {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  aspect-ratio: 4/3;
-  object-fit: cover;
-  object-position: 50% 50%;
-  border-radius: 16px 16px 0 0;
-  filter: contrast(70%);
-  transition: all 0.6s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-}
-
-.card > img:hover {
-  filter: contrast(100%);
-}
-
-.card-content {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 15px 20px;
-}
-
-.card-content > p {
-  margin-bottom: 10px;
-}
-
-.card-content > p:nth-child(1) {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #1e40af;
-}
-
-.card-content > p:nth-child(2) {
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: #6b7280;
-}
-
-
-
 
 
 
@@ -749,7 +693,7 @@ section {
   grid-template-columns: 45% 50%;
   place-items: center;
   gap: 50px;
-  background: linear-gradient(0deg, #ffffff, #aea4e3);
+  background: linear-gradient(0deg, #aea4e3, #fff);
   overflow: hidden;
   padding: 130px 80px;
 }
@@ -1097,6 +1041,8 @@ details:last-child {
 	height: 100vh;
   padding-left: 10%;
   padding-right: 10%;
+  background: linear-gradient(0deg, #ffffff, #aea4e3);
+
 }
 
 .dark #section4 {
@@ -1628,21 +1574,6 @@ overflow: hidden;
 }
 
 
-.dark .jumbo {
-  background-image: var(--stripesDark), var(--rainbow);
-  filter: blur(10px) opacity(50%) saturate(200%);
-}
-.dark .jumbo::after {
-  background-image: var(--stripesDark), var(--rainbow);
-}
-
-
-.dark .jumbo {
-/* Styles pour le mode sombre du jumbo */
-background-image: var(--stripesDark), var(--rainbow);
-filter: blur(10px) opacity(50%) saturate(200%);
-}
-
 .dark #section2 {
 /* Styles spécifiques pour le mode sombre dans la section exemples */
 background: linear-gradient(0deg, #000000, #aea4e3);
@@ -1651,7 +1582,7 @@ color: #fff ;
 }
 
 .dark #section {
-  background: linear-gradient(180deg, #000000, #aea4e3);
+  background: linear-gradient(to bottom, #000000, #3d234c, #000000);
 }
 
 .dark #section2 p {
@@ -1714,7 +1645,7 @@ color: #fff ;
   gap: 15px;
   font-size: 30px;
   justify-content: center;
-  background-color: #aea4e3;
+  background-color: #000000;
 }
 
 .dark #sliderValue1 {
@@ -1740,13 +1671,7 @@ color: #fff ;
 
 
 .dark .home {
-  display: grid;
-  grid-template-columns: 45% 50%;
-  place-items: center;
-  gap: 50px;
-  background: #000 !important;
-  overflow: hidden;
-  padding: 130px 80px;
+  background: #000;
 }
 
 
